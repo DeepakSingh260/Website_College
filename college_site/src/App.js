@@ -7,7 +7,7 @@ import Home from './subchild/Home';
 import Logo_Src from './Assets/gcet_logo.jpg';
 import styled from 'styled-components'
 import Example from './navbar';
-import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink,Form , FormText ,Button, FormGroup } from 'reactstrap';
 import React from 'react'
 
 
@@ -22,24 +22,25 @@ function App() {
       
               <Routes>
                 <Route path="/" element={<Home />}/>
-                  
-                  <Route path="/about_us" element={<About_us />} />
-                  <Route path="/department" element={<Departments />} />
-                  <Route path="*" element={<Academics />} />
+                
+                <Route path="/about_us" element={<About_us />} />
+                <Route path="/department" element={<Departments />} />
+                <Route path="*" element={<Academics />} />
               
               </Routes>
            
       <header className="App-header">
-        <div className='draw_box'>
+        <div className='draw_box' >
         <img  className = "class_logo" src={Logo_Src} alt="Image Failed to Load"/>
         <h1 className='class_heading'>
-          Government College of Engineering and Technology
+          Government College of Engineering and Technology Jammu
         </h1>
-        </div>
         
-        <Navbar color="light" light expand="md">
-                <NavbarBrand href="/">Brand</NavbarBrand>
+        
+        <Navbar sticky='top' className='navbar' color="light"  light expand="md">
+                <NavbarBrand href="/">GCET</NavbarBrand>
                 <NavbarToggler onClick={() => { setIsOpen(!isOpen) }} />
+                {/* <Navbar.Toggle aria-controls="basic-navbar-nav" /> */}
                 <Collapse isOpen={isOpen} navbar>
                     <Nav className="mr-auto" navbar>
                         <NavItem>
@@ -78,12 +79,19 @@ function App() {
                         <NavItem>
                             <NavLink href="/">Contact us</NavLink>
                         </NavItem>
+                        <Form className="d-flex">
+                        <label>
+                          Search
+                          <input  placeholder='search' type="search" label="search"  className="me-2" />
+                          </label>
+                        <Button >Search</Button>
+                      </Form>
                     </Nav>
 
                 </Collapse>
             </Navbar>
             
-            
+            </div>
             
                
 

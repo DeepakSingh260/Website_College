@@ -1,0 +1,40 @@
+.Home{
+   
+    margin-top: 150px;
+}
+.card {
+    width:250px;
+    display: block;
+    margin: 25px;
+    box-shadow: 10px 5px 40px 20px darken(#341cac, 5%);
+    transition: .25s;
+    float: left;
+    
+  }
+  .club_class {
+    width:250px;
+    display:block;
+    margin: 25px;
+    
+    box-shadow:  0px 0px 0px 1px #bbb;
+    box-sizing: border-box;
+    transition: .25s;
+    float:left;
+    
+    
+  }
+  .club_heading{
+    padding: 20px;
+  }
+  
+  .card-header {
+    height: 150px;
+    width: 100%;
+    padding: 15px;
+    width:100%;
+    background-size:cover;
+    color:#fff;
+    
+    
+  }
+  

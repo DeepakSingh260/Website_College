@@ -47,7 +47,13 @@ function App() {
                             <NavLink href="/">Home</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="/about_us">About Us</NavLink>
+                              <NavLink href="/about_us">About College</NavLink>
+                              <NavLink href="/about_us">ORGANISATION CHART</NavLink>
+                              <NavLink href="/about_us">Administrative Setup</NavLink>
+                              <NavLink href="/about_us">Administrative Staff</NavLink>
+                              <NavLink href="/about_us">CLUBS/Societies</NavLink>
+                              <NavLink href="/about_us">SRO/Orders</NavLink>
+                              <NavLink href="/about_us">AUDIT Report</NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink href="/department">Department</NavLink>

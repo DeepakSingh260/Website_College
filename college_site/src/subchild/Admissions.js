@@ -8,5 +8,3 @@ const Admissions = () =>{
   );
 }
 export default Admissions;
-
-Admissions.js

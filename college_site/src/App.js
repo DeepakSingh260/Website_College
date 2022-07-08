@@ -9,9 +9,22 @@ import styled from 'styled-components'
 import Example from './navbar';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink,Form , FormText ,Button, FormGroup } from 'reactstrap';
 import React from 'react'
-
+import MyNavBar from './components/navbar';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+import "./Assets/css/bootstrap.min.css";
+import "./Assets/css/normalize.css";
+import "./Assets/css/font-awesome.min.css";
+import "./Assets/css/icomoon.css";
+import "./Assets/css/animate.css";
+import "./Assets/css/prettyPhoto.css";
+import "./Assets/css/owl.carousel.css";
+import "./Assets/css/owl.theme.default.css";
+import "./Assets/css/transitions.css";
+import "./Assets/css/main.css";
+import "./Assets/css/color.css";
+import "./Assets/css/responsive.css";
 
 function App() {
   const [isOpen, setIsOpen] = React.useState(false)
@@ -31,67 +44,10 @@ function App() {
            
       <header className="App-header">
         <div className='draw_box' >
-        <img  className = "class_logo" src={Logo_Src} alt="Image Failed to Load"/>
-        <h1 className='class_heading'>
-          Government College of Engineering and Technology Jammu
-        </h1>
+        <MyNavBar/>
         
-        
-        <Navbar sticky='top' className='navbar' color="light"  light expand="md">
-                <NavbarBrand href="/">GCET</NavbarBrand>
-                <NavbarToggler onClick={() => { setIsOpen(!isOpen) }} />
-                {/* <Navbar.Toggle aria-controls="basic-navbar-nav" /> */}
-                <Collapse isOpen={isOpen} navbar>
-                    <Nav className="mr-auto" navbar>
-                        <NavItem>
-                            <NavLink href="/">Home</NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink href="/about_us">About Us</NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink href="/department">Department</NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink href="/">Academics</NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink href="/">Admissions</NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink href="/">Tenders</NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink href="/">TEQIP</NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink href="/">Download</NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink href="/">MOU's</NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink href="/">NIRF</NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink href="/">AICTE EOA</NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink href="/">Contact us</NavLink>
-                        </NavItem>
-                        <Form className="d-flex">
-                        <label>
-                          Search
-                          <input  placeholder='search' type="search" label="search"  className="me-2" />
-                          </label>
-                        <Button >Search</Button>
-                      </Form>
-                    </Nav>
-
-                </Collapse>
-            </Navbar>
             
-            </div>
+        </div>
             
                
 

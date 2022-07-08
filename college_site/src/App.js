@@ -47,16 +47,25 @@ function App() {
                             <NavLink href="/">Home</NavLink>
                         </NavItem>
                         <NavItem>
+                              <NavLink href="/about_us">About Us</NavLink>
                               <NavLink href="/about_us">About College</NavLink>
-                              <NavLink href="/about_us">ORGANISATION CHART</NavLink>
+                              <NavLink href="/about_us">Organisation Chart</NavLink>
                               <NavLink href="/about_us">Administrative Setup</NavLink>
                               <NavLink href="/about_us">Administrative Staff</NavLink>
                               <NavLink href="/about_us">CLUBS/Societies</NavLink>
                               <NavLink href="/about_us">SRO/Orders</NavLink>
-                              <NavLink href="/about_us">AUDIT Report</NavLink>
+                              <NavLink href="/about_us">Audit Report</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="/department">Department</NavLink>
+                                <NavLink href="/department">Department</NavLink>
+                                <NavLink href="/department">Civil Engineering</NavLink>
+                                <NavLink href="/department">Electronics and Communication Engineering</NavLink>
+                                <NavLink href="/department">Electrical Engineering</NavLink>
+                                <NavLink href="/department">Mechanical Engineering</NavLink>
+                                <NavLink href="/department">Humanities</NavLink>
+                                <NavLink href="/department">Applied Physics</NavLink>
+                                <NavLink href="/department">Applied Chemistry</NavLink>
+                                <NavLink href="/department">Applied Mathematics</NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink href="/">Academics</NavLink>

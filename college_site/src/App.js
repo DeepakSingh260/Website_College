@@ -68,10 +68,29 @@ function App() {
                                 <NavLink href="/department">Applied Mathematics</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="/">Academics</NavLink>
+                                  <NavLink href="/">Academics</NavLink>
+                                  <NavLink href="/">Results</NavLink>
+                                  <NavLink href="/">BE syllabus</NavLink>
+                                  <NavLink href="/">Academics</NavLink>
+                                  <NavLink href="/">Academics</NavLink>
+                                  <NavLink href="/">Academics</NavLink>
+                                  <NavLink href="/">Academics</NavLink>
+                                  <NavLink href="/">Academics</NavLink>
+                            
                         </NavItem>
                         <NavItem>
-                            <NavLink href="/">Admissions</NavLink>
+                                    <NavLink href="/">Admissions</NavLink>
+                                    <NavLink href="/">Selection Procedure</NavLink>
+                                    <NavLink href="/">Documents Required</NavLink>
+                                    <NavLink href="/">TFW Form</NavLink>
+                                    <NavLink href="/">Admission Form</NavLink>
+                                    <NavLink href="/">Hostel Admission Form</NavLink>
+                                    <NavLink href="/">Branch Upgradation Form</NavLink>
+                                    <NavLink href="/">Intake Capacity</NavLink>
+                                    <NavLink href="/">BE Fee Structure</NavLink>
+                                    <NavLink href="/">Mtech Fee Structure</NavLink>
+                                    <NavLink href="/">Rules</NavLink>
+                                    <NavLink href="/">University Statue</NavLink>                            
                         </NavItem>
                         <NavItem>
                             <NavLink href="/">Tenders</NavLink>
@@ -80,13 +99,23 @@ function App() {
                             <NavLink href="/">TEQIP</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="/">Download</NavLink>
+                              <NavLink href="/">Download</NavLink>
+                              <NavLink href="/">Document List</NavLink>
+                              <NavLink href="/">Admission Form</NavLink>
+                              <NavLink href="/">Employee Noc Form</NavLink>
+                              <NavLink href="/">Student Noc Form</NavLink>
+                              <NavLink href="/">Student Undertaking</NavLink>
+                              <NavLink href="/">GCET AA ASST PROF Form</NavLink>
+                              <NavLink href="/">SOA AA ASST PROF Form</NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink href="/">MOU's</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="/">NIRF</NavLink>
+                              <NavLink href="/">NIRF</NavLink>
+                              <NavLink href="/">Uploaded Data</NavLink>
+                              <NavLink href="/">Formats</NavLink>
+                            
                         </NavItem>
                         <NavItem>
                             <NavLink href="/">AICTE EOA</NavLink>

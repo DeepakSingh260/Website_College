@@ -45,7 +45,8 @@ function App() {
       <header className="App-header">
         <div className='draw_box' >
         <MyNavBar/>
-        
+      
+           
             
         </div>
             

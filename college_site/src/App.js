@@ -12,9 +12,15 @@ import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink,For
 import React from 'react'
 import MyNavBar from './components/navbar';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'jquery'
 
+
+// import 'jquery'
+// import 'popper.js'
+// import 'react-bootstrap'
 import "./Assets/css/bootstrap.min.css";
+
 import "./Assets/css/normalize.css";
 import "./Assets/css/font-awesome.min.css";
 import "./Assets/css/icomoon.css";
@@ -50,8 +56,10 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 
+
 function App() {
   const [isOpen, setIsOpen] = React.useState(false)
+  
   
   return (
     

@@ -2,6 +2,7 @@
 import React from 'react';
 
 
+
 import img01 from "../Assets/images/flags/img-01.jpg";
 import img02 from "../Assets/images/flags/img-02.jpg";
 import img03 from "../Assets/images/flags/img-03.jpg";
@@ -12,8 +13,11 @@ import themepost_img04 from "../Assets/images/themepost/img-04.jpg"
 import GCET_Jammu1 from "../Assets/images/GCET_Jammu1.jpg";
 import logo_gcet from "../Assets/images/logo_gcet.png";
 
+
+
 const navbar = () =>{
   return (
+	
     <header id="tg-header" class="tg-header tg-haslayout">
 			
 			<div class="clearfix"></div>
@@ -1843,6 +1847,10 @@ const navbar = () =>{
 			</div>
 		</header>
   );
+  
 }
+
+
+
 export default navbar;
 

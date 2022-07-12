@@ -85,26 +85,26 @@ const navbar = () =>{
 											</div>
 										</li>
 										<li class="menu-item-has-mega-menu">
-											<a href="javascript:void(0);">Events</a>
+											<a href="javascript:void(0);">Subjects</a>
 											<div class="mega-menu tg-fullmegamenu">
 												<ul class="mega-menu-row">
 													<li class="mega-menu-col">
 														<div class="tg-themetabs">
 															<ul class="tg-themetabnav" role="tablist">
 																<li role="presentation" class="active">
-																	<a href="#tg-science" aria-controls="tg-science" role="tab" data-toggle="tab">Science</a>
+																	<a href="/civil_department" aria-controls="tg-science" role="tab" data-toggle="tab">Civil Engineering</a>
 																</li>
 																<li role="presentation">
-																	<a href="#tg-management" aria-controls="tg-management" role="tab" data-toggle="tab">Management</a>
+																	<a href="#tg-management" aria-controls="tg-management" role="tab" data-toggle="tab">Computer Engineering</a>
 																</li>
 																<li role="presentation">
-																	<a href="#tg-medical" aria-controls="tg-medical" role="tab" data-toggle="tab">Medical</a>
+																	<a href="#tg-medical" aria-controls="tg-medical" role="tab" data-toggle="tab">Electrical Engineering</a>
 																</li>
 																<li role="presentation">
-																	<a href="#tg-arts" aria-controls="tg-arts" role="tab" data-toggle="tab">Arts</a>
+																	<a href="#tg-arts" aria-controls="tg-arts" role="tab" data-toggle="tab">Electronics & Communication Engineering</a>
 																</li>
 																<li role="presentation">
-																	<a href="#tg-informationtechnology" aria-controls="tg-informationtechnology" role="tab" data-toggle="tab">Information Technology</a>
+																	<a href="#tg-informationtechnology" aria-controls="tg-informationtechnology" role="tab" data-toggle="tab">Mechancial Engineering</a>
 																</li>
 																<li role="presentation">
 																	<a href="#tg-history" aria-controls="tg-history" role="tab" data-toggle="tab">History</a>
@@ -130,7 +130,7 @@ const navbar = () =>{
 																					</figure>
 																					<div class="tg-themepostcontent">
 																						<ul class="tg-themeposttags">
-																							<li><a href="javascript:void(0);">Management</a></li>
+																							<li><a href="javascript:void(0);">Civil Engineering</a></li>
 																							<li><a href="javascript:void(0);">Science</a></li>
 																						</ul>
 																						<div class="tg-themeposttitle">
@@ -1767,7 +1767,7 @@ const navbar = () =>{
 										<li class="menu-item-has-children">
 											<a href="javascript:void(0);">Admissions</a>
 											<ul class="sub-menu">
-												<li><a href="admissions.html">Admissions</a></li>
+												<li><a href="/admissions">Admissions</a></li>
 												<li><a href="admissionsdetail.html">Admission Detail</a></li>
 											</ul>
 										</li>

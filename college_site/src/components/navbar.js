@@ -99,16 +99,16 @@ const navbar = () =>{
 																	<a href="/civil_department" aria-controls="tg-science" role="tab" data-toggle="tab">Civil Engineering</a>
 																</li>
 																<li role="presentation">
-																	<a href="#tg-management" aria-controls="tg-management" role="tab" data-toggle="tab">Computer Engineering</a>
+																	<a href="/computer_department" aria-controls="tg-management" role="tab" data-toggle="tab">Computer Engineering</a>
 																</li>
 																<li role="presentation">
-																	<a href="#tg-medical" aria-controls="tg-medical" role="tab" data-toggle="tab">Electrical Engineering</a>
+																	<a href="/electricl_department" aria-controls="tg-medical" role="tab" data-toggle="tab">Electrical Engineering</a>
 																</li>
 																<li role="presentation">
-																	<a href="#tg-arts" aria-controls="tg-arts" role="tab" data-toggle="tab">Electronics & Communication Engineering</a>
+																	<a href="/e_c_department" aria-controls="tg-arts" role="tab" data-toggle="tab">Electronics & Communication Engineering</a>
 																</li>
 																<li role="presentation">
-																	<a href="#tg-informationtechnology" aria-controls="tg-informationtechnology" role="tab" data-toggle="tab">Mechancial Engineering</a>
+																	<a href="/mechanical_department" aria-controls="tg-informationtechnology" role="tab" data-toggle="tab">Mechancial Engineering</a>
 																</li>
 																<li role="presentation">
 																	<a href="#tg-history" aria-controls="tg-history" role="tab" data-toggle="tab">History</a>

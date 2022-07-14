@@ -1,6 +1,6 @@
 import React from "react";
-
-const civil_dep =()=>{
+import './civil_dep.css'
+const Civil_dep =()=>{
     return(
         <div className="civil_dep">
             <h1>Civil Engineering Department</h1>
@@ -8,4 +8,4 @@ const civil_dep =()=>{
     )
 }
 
-export default civil_dep
+export default Civil_dep;

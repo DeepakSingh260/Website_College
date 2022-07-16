@@ -2,6 +2,7 @@ import React from 'react';
 import Department_Image from '../Assets/GCET_BUILD.jpg';
 import CLUB_LOGO from '../Assets/clubs.jpg'
 import './Home.css';
+import Gallery from '../components/Gallery'
 
 const Home = () =>{
   return (
@@ -10,6 +11,7 @@ const Home = () =>{
       <h3>Home!!</h3>
       <T_P/>
       <CLUBS_CLASS />
+      <Gallery/>
       </>
     </div>
   );

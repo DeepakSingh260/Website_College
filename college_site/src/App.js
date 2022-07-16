@@ -83,6 +83,7 @@ function App() {
                 <Route path='/electricl_department' element = {<Elec_dep/>} />
                 <Route path='/e_c_department' element = {<E_C_dep/>} />
                 <Route path='/mechanical_department' element = {<Mech_dep/>} />
+                
               
               </Routes>
            

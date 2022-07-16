@@ -1,6 +1,9 @@
 {
   "dependencies": {
+    "@fancyapps/ui": "^4.0.27",
     "firebase": "^9.9.0",
+    "jquery": "^3.6.0",
+    "popper.js": "^1.16.1",
     "react-image-gallery": "^1.2.8",
     "react-photo-collage": "^1.0.9",
     "react-photo-gallery": "^8.0.0",

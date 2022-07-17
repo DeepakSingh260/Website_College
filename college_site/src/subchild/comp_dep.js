@@ -6,7 +6,12 @@ import { getDatabase, onValue, ref, set } from "firebase/database";
 import app from "../firebase.js"
 import { async } from '@firebase/util';
 
+import { Slideshow , SlideshowItem } from '../components/slideshow';
 
+import gcet from '../Assets/gcet_logo.jpg'
+import build from '../Assets/GCET_BUILD.jpg'
+import civil from '../Assets/civil_dep.jpg'
+import clubs from '../Assets/clubs.jpg'
 const Comp_dep = () =>{
 
     const db = getDatabase(app)
@@ -29,15 +34,24 @@ const Comp_dep = () =>{
 
   return (
     <div className='comp_dep'>
-      <>
-
-      </>
-      <div>
+     <div>
  
-        <h1  className="Introduction">{heading}</h1>
-        <p className='desc'>{desc}</p>
+ <h1  className="Introduction">{heading}</h1>
+ <p className='desc'>{desc}</p>
 
-      </div>
+</div>
+      <Slideshow  width={100} height={100}>
+        <SlideshowItem>
+          <img src={civil}/>
+        </SlideshowItem>
+        <SlideshowItem>
+        <img src={build}/>
+        </SlideshowItem>
+        <SlideshowItem>
+        <img src={clubs}/>
+        </SlideshowItem>
+      </Slideshow>
+      
 			</div>
 		
     

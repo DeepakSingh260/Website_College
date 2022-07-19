@@ -4,8 +4,8 @@
 }
 
 .draw_box{
-  background-color: brown;
-  position: fixed;
+  background-color: white;
+  position:absolute;
   top: 0%;
   width: 100%;
   /* overflow: hidden  ; */
@@ -18,5 +18,17 @@
 }
 .App-header {
  
+  color: white;
+}
+.gallery{
+  float: right;
+}
+
+
+.card-title{
+	background: brown !important;
+  color: white;
+}
+.card-title h3{
   color: white;
 }

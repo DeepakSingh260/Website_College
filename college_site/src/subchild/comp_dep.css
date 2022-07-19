@@ -1,0 +1,18 @@
+.comp_dep{
+    margin-top: 250px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.Introduction{
+    background-color: gainsboro;
+    color: black;
+    
+    border-radius: 2%;
+}
+.desc{
+    margin-top: 20px;
+    text-align: left;
+    font-size: large;
+    
+}
+

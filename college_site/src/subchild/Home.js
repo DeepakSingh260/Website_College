@@ -2,14 +2,26 @@ import React from 'react';
 import Department_Image from '../Assets/GCET_BUILD.jpg';
 import CLUB_LOGO from '../Assets/clubs.jpg'
 import './Home.css';
+import Gallery from '../components/Gallery'
+import Noticeboard from '../components/noticeboard'
 
 const Home = () =>{
   return (
-    <div className='Home'>
+    <div className='Home row'>
       <>
-      <h3>Home!!</h3>
-      <T_P/>
-      <CLUBS_CLASS />
+      {/* <h3>Home!!</h3> */}
+      {/* <T_P/>
+      <CLUBS_CLASS /> */}
+      <div className='col-lg-3'>
+
+      <Noticeboard/>
+
+      </div>
+      <div class='col-lg-6'>
+      <Gallery/>
+
+
+      </div>
       </>
     </div>
   );

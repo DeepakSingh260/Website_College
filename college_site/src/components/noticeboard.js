@@ -1,5 +1,27 @@
+import React ,{ useState,useEffect } from "react";
+import app from '../firebase'
+import { getDatabase, onValue, ref, set } from "firebase/database";
 
-const noticeboard = () =>{
+const Noticeboard = () =>{
+	const db = getDatabase(app)
+	const read = ref(db,'Notifications/');
+	const [tasks, setTasks] = useState([]);
+
+    useEffect(() => {
+        
+        const listener = onValue(read, (snapshot) => {
+            const fetchedTasks = [];
+            snapshot.forEach(childSnapshot => {
+                
+                const data = childSnapshot.val().Title;
+				console.log(data)
+                fetchedTasks.push(data);
+            });
+            setTasks(fetchedTasks);
+        });
+        
+    }, []);
+	
     return (
         <div class="card tg-widget tg-widgetnoticeboard">
 									<div class="card-title tg-widgettitle">
@@ -10,15 +32,13 @@ const noticeboard = () =>{
                                         <input type="text" class="form-control" placeholder="Search Notification" aria-label="Search_Notification" aria-describedby="basic-addon1"/>
                                         </div>
 										<ul class='list-group list-group-flush'>
-											<li class='list-group-item'>
-												<a href="javascript:void(0);">Adipisicing elit sed dotas eiusmod tempor incididunt utae labore etiat dolore magna aliqua enim ad minim veniam.</a>
+											{tasks.map(
+												(task)=>(
+												<li class='list-group-item'>
+												<a href="javascript:void(0);">{task}</a>
 											</li>
-											<li class='list-group-item'>
-												<a href="javascript:void(0);">Labore etiat dolore magna aliqua enim ad minim veniam.</a>
-											</li>
-											<li class='list-group-item'>
-												<a href="javascript:void(0);">Duis aute irure dolor in reprehenderit.</a>
-											</li>
+												)
+											)}
 										</ul>
 									</div>
 								</div>
@@ -26,4 +46,4 @@ const noticeboard = () =>{
 }
 
 
-export default noticeboard;
+export default Noticeboard;

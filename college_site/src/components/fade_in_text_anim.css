@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ooh+Baby&display=swap");
+
+.animate-charcter {
+  text-transform: uppercase;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-image: linear-gradient(-225deg,
+      #9d6414 0%,
+      #654d19 29%,
+      #ff1361 67%,
+      #9d6414 100%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 2vw;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}

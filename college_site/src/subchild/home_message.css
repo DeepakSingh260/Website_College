@@ -1,0 +1,6 @@
+.jumbotron {
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url("../Assets/GCET_BUILD.jpg");
+    background-position: 20% 20%;
+    background-size: cover;
+    color: rgb(209, 218, 226);
+  }

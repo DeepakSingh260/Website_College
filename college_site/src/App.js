@@ -29,6 +29,7 @@ import Admissions from './subchild/Admissions';
 
 
 import Gallery from 'react-photo-gallery';
+import Imageslider from './components/imageSlider';
 
 
 
@@ -70,6 +71,13 @@ function App() {
   return (
 
     <div className="App">
+      <header className="App-header">
+        <div className='draw_box' >
+          <MyNavBar/>
+        
+        </div>
+            
+      </header>
               
               <Routes>
                 <Route path="/" element={<Home />}/>
@@ -87,13 +95,7 @@ function App() {
               
               </Routes>
            
-      <header className="App-header">
-        <div className='draw_box' >
-        <MyNavBar/>
-        
-        </div>
-            
-      </header>
+      
 
       
     </div>

@@ -20,17 +20,20 @@ const navbar = () =>{
 	
     <header id="tg-header" class="tg-header tg-haslayout">
 			
-			<div class="clearfix"></div>
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 						<div class="tg-logoandnoticeboard">
-							<center>
-								<strong class="tg-logo">
-									<a href="index-2.html"><img src={logo_gcet} width="120" alt="GCET Jammu"/></a>
+								<strong class="tg-logo row align-items-center ">
+									<div className='col-sm-2'>
+									<img src={logo_gcet} alt="GCET Jammu"/>
+
+									</div>
+									<div className='col-sm-10'>
 									<h2>Government College of Engineering & Technology</h2>
+
+									</div>
 								</strong>
-							</center>
 							
 						</div>
 						<div class="tg-navigationarea">
@@ -1835,12 +1838,12 @@ const navbar = () =>{
 									</ul>
 								</div>
 							</nav>
-							<div class="tg-searchbox">
+							{/* <div class="tg-searchbox">
 								<a id="tg-btnsearch" class="tg-btnsearch" href="javascript:void(0);"><i class="icon-magnifier"></i></a>
 								<form class="tg-formtheme tg-formsearch">
 									<fieldset><input type="search" name="search" class="form-control" placeholder="Start Your Search Here"/></fieldset>
 								</form>
-							</div>
+							</div> */}
 						</div>
 					</div>
 				</div>

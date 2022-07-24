@@ -27,9 +27,7 @@ import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import Admissions from './subchild/Admissions';
 
-
-import Gallery from 'react-photo-gallery';
-
+import Footer from './components/Footer';
 
 
 
@@ -70,6 +68,13 @@ function App() {
   return (
 
     <div className="App">
+      <header className="App-header">
+        <div className='draw_box' >
+          <MyNavBar/>
+        
+        </div>
+            
+      </header>
               
               <Routes>
                 <Route path="/" element={<Home />}/>
@@ -86,14 +91,10 @@ function App() {
                 
               
               </Routes>
+
+              <Footer/>
            
-      <header className="App-header">
-        <div className='draw_box' >
-        <MyNavBar/>
-        
-        </div>
-            
-      </header>
+      
 
       
     </div>

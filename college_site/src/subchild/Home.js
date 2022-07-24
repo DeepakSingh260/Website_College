@@ -17,22 +17,22 @@ const Home = () => {
   return (
     <div className='container-fluid'>
       <div className='Home'>
-        <div className='col-lg-12 text-center'>
+        <div className='col-lg-12 text-center' >
       <TextAnim/>
           <Imageslider />
         </div>
       </div>
-    <div className='container'>
+    <div className='container '>
       <div className='row justify-content-center'>
-        <div className='col-lg-6'>
+        <div className='col-lg-6 notification'>
 
         <Noticeboard/>
         </div>
       </div>
-      <div className='row'>
+      <div className='row cards'>
 
         <Card name='Annual Report' href={Department_Image}/>
-        <Card name='Notifications / Orders' />
+        <Card name='Notifications / Orders'  />
         <Card name="HOD's List" />
         <Card name='Grievance Cell' />
         <Card name='AntiRagging' />

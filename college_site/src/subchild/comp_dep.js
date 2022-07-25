@@ -8,10 +8,14 @@ import { async } from '@firebase/util';
 
 import { Slideshow , SlideshowItem } from '../components/slideshow';
 
-import gcet from '../Assets/gcet_logo.jpg'
-import build from '../Assets/GCET_BUILD.jpg'
-import civil from '../Assets/civil_dep.jpg'
-import clubs from '../Assets/clubs.jpg'
+import gcet_1 from '../Assets/Garden.jpg';
+import gcet_2 from '../Assets/Lab1.jpg';
+import gcet_3 from '../Assets/gcet_3.jpg';
+import gcet_4 from '../Assets/Mechanical1.jpg';
+import Department_Image from '../Assets/civil_dep.jpg';
+import CLUB_LOGO from '../Assets/gcet_6.jpg';
+import Imageslider from '../components/imageSlider';
+import TextAnim from '../components/fade_in_text_anim_home';
 const Comp_dep = () =>{
 
     const db = getDatabase(app)
@@ -34,23 +38,19 @@ const Comp_dep = () =>{
 
   return (
     <div className='comp_dep'>
-     <div>
+      <div className='comp_slider'>
+        <div className='col-lg-12 text-center' >
+      <TextAnim/>
+          <Imageslider href={[gcet_1, gcet_2, gcet_3, gcet_4, Department_Image, CLUB_LOGO]}/>
+        </div>
+      </div>
+     <div className='context'>
  
  <h1  className="Introduction">{heading}</h1>
  <p className='desc'>{desc}</p>
 
 </div>
-      <Slideshow  width={100} height={100}>
-        <SlideshowItem>
-          <img src={civil}/>
-        </SlideshowItem>
-        <SlideshowItem>
-        <img src={build}/>
-        </SlideshowItem>
-        <SlideshowItem>
-        <img src={clubs}/>
-        </SlideshowItem>
-      </Slideshow>
+
       
 			</div>
 		

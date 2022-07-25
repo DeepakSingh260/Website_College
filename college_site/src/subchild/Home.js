@@ -1,6 +1,6 @@
 import React from 'react';
-import Department_Image from '../Assets/GCET_BUILD.jpg';
-import CLUB_LOGO from '../Assets/clubs.jpg';
+import Department_Image from '../Assets/civil_dep.jpg';
+import CLUB_LOGO from '../Assets/gcet_6.jpg';
 import './Home.css';
 import './home_message.css';
 import '../components/fade_in_text_anim.css'
@@ -11,10 +11,10 @@ import Imageslider from '../components/imageSlider';
 import Card from '../components/card';
 import Message from '../components/message';
 import TextAnim from '../components/fade_in_text_anim_home';
-import gcet_1 from '../Assets/gcet_1.jpg';
-import gcet_2 from '../Assets/gcet_2.jpg';
+import gcet_1 from '../Assets/Garden.jpg';
+import gcet_2 from '../Assets/Lab1.jpg';
 import gcet_3 from '../Assets/gcet_3.jpg';
-import gcet_4 from '../Assets/gcet_4.jpg';
+import gcet_4 from '../Assets/Mechanical1.jpg';
 
 
 const Home = () => {

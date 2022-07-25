@@ -6,6 +6,15 @@ import { getDatabase, onValue, ref, set } from "firebase/database";
 import app from "../firebase.js"
 import { async } from '@firebase/util';
 
+import gcet_1 from '../Assets/Garden.jpg';
+import gcet_2 from '../Assets/Lab1.jpg';
+import gcet_3 from '../Assets/gcet_3.jpg';
+import gcet_4 from '../Assets/Mechanical1.jpg';
+import Department_Image from '../Assets/civil_dep.jpg';
+import CLUB_LOGO from '../Assets/gcet_6.jpg';
+import Imageslider from '../components/imageSlider';
+import TextAnim from '../components/fade_in_text_anim_home';
+
 
 const Civil_dep = () =>{
 
@@ -29,9 +38,14 @@ const Civil_dep = () =>{
 
   return (
     <div className='civil_dep'>
-      <>
-
-      </>
+      
+      <div className='comp_slider'>
+        <div className='col-lg-12 text-center' >
+      <TextAnim/>
+          <Imageslider href={[gcet_1, gcet_2, gcet_3, gcet_4, Department_Image, CLUB_LOGO]}/>
+        </div>
+      </div>
+     <div className='context'></div>
       <div >
  
         <h1 className="Introduction">{heading}</h1>

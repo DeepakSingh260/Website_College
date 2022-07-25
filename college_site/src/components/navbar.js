@@ -72,7 +72,7 @@ const navbar = () =>{
 										<li class="menu-item-has-children">
 											<a href="javascript:void(0);">Depts</a>
 											<ul class="sub-menu">
-												<li><a href="departments.html">Departments</a></li>
+												<li><a href="/department">Departments</a></li>
 												<li><a href="departmentdetail.html">Department Detail</a></li>
 											</ul>
 										</li>

@@ -4,111 +4,171 @@ import './Department.css'
 const Departments = () =>{
   return (
     <div className='Department'>
-      <h3>Department</h3>
-     
-      <span class="tg-lastmodified">Get Bright Future With Us</span>
-      
-      <h2>Admission Open Now!</h2>
-									
-									
-        <h3>Selection Procedure</h3>
-        <p>  Admission to the Ist Semester of 4 year B.E Degree Course shall open to such candidates as have passed 12 years examination under 10+2 Scheme with English, Mathematics, Physics and Chemistry (Science Group) from J&K Board of School Education or any other examination conducted by a University/State Board of Secondary Education recognized as equivalent thereto with not less than 50% marks in aggregate in the qualifying examination in respect of open category and 40% marks in aggregate in respect of SC/ST categories.
+      <h1>Administration</h1>
+		<table className='table_dep'>
+			<caption className="caption">PERSONAL SECTION (PRINCIPAL OFFICE)</caption>
+			<tr>
+				<th>S No.</th>
+				<th>Name </th>
+				<th>Post</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>Dr. Sameru Sharma</td>
+				<td>Principal</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Mr. Soma Kumar</td>
+				<td>Private Secretary to Principal</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Mr. Dinesh Magotra</td>
+				<td>P.A. to Principal</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>Mr. Jatinder Antal</td>
+				<td>Maintenance Assistant</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>Mr. Govind Kumar</td>
+				<td>Lab Attendant</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>Mrs. Shafali Sanyal</td>
+				<td>Lab Attendant</td>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>Mr. Virender Sethi</td>
+				<td>Orderly</td>
+			</tr>
+			<tr>
+				<td>8</td>
+				<td>Mr. Janak Raj</td>
+				<td>Orderly</td>
+			</tr>
+		</table>
+		<table className='table_dep'>
+			<caption className="caption">EXAMINATION SECTION</caption>
+			<tr>
+				<th>S No.</th>
+				<th>Name </th>
+				<th>Post</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>Dr. Simmi Dutta</td>
+				<td>I/C Examination</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Er. Surjeet Singh Ranyal</td>
+				<td>SLT</td>
+			</tr>
+			
+		</table>
 
-          The admission shall be made on the basis of a common Entrance Test conducted by the Board of Professional Entrance Examination of the State Government for the purpose.
-          
-          Admission made by the College shall remain provisional till such time the eligibility of the candidates admitted is approved by the University.
-          
-          </p>
-									
-          <div >
-            <h3>Documents Required</h3>
-            <ul >
-              <li>
-              <a href="#">
-                  Documents Required for Admission
-                </a></li> 
-              <li>
-                <a href="#">
-                Circular for EWS
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                Undertaking from All Students
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                Undertaking from Students who have passed 12th other than JKBOSE
-                </a>
-              </li>
-              </ul>
-          </div>
-									<div >
-										<h3>Intake Capacity</h3>
-										<ul class="tg-downloadlist">
-											<li>
-												<div class="tg-result">
-													<span class="tg-counting">01</span>
-													<a class="tg-btndownloadresult" href="javascript:void(0);">
-														<em>60 + 5% TFW</em>
-													</a>
-													<div class="tg-description"><p>CIVIL ENGINEERING</p></div>
-												</div>
-											</li>
-											<li>
-												<div >
-													<span >02</span>
-													<a >
-														<em>60 + 5% TFW</em>
-													</a>
-													<div><p>MECHANICAL ENGINEERING</p></div>
-												</div>
-											</li>
-											<li>
-												<div >
-													<span >03</span>
-													<a >
-														<em>60 + 5% TFW</em>
-													</a>
-													<div ><p>ELECTRICAL ENGINEERING</p></div>
-												</div>
-											</li>
-											<li>
-												<div>
-													<span >04</span>
-													<a >
-														<em>60 + 5% TFW</em>
-													</a>
-													<div ><p>ELECTRONICS & COMMUNICATION ENGINEERING</p></div>
-												</div>
-											</li>
-											<li>
-												<div>
-													<span >05</span>
-													<a >
-														<em>60 + 5% TFW</em>
-													</a>
-													<div ><p>COMPUTER ENGINEERING</p></div>
-												</div>
-											</li>
-											<li>
-												<div >
-													<a >
-														<em>300 + 5% TFW</em>
-													</a>
-													<div ><p>TOTAL</p></div>
-												</div>
-											</li>
-											
-										</ul>
-									</div>
-								
-						
-							
-						</div>
+		<table className='table_dep'>
+			<caption className="caption">REGISTRAR SECTION</caption>
+			<tr>
+				<th>S No.</th>
+				<th>Name </th>
+				<th>Post</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>	
+Mrs. Vinakshi Koul, KAS</td>
+				<td>Registrar</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Mrs. Phoola Koul</td>
+				<td>Assistant Registrar</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>	
+Mrs. Raj Kumari</td>
+				<td>Section Officer (Administration)
+</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>Mrs. Shanta Kumari</td>
+				<td>Section Officer (Academics)</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>Mrs. Anjali Bhat</td>
+				<td>	
+Section Officer (Academics)</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>	
+Mr. Rajinder Singh</td>
+				<td>Section Officer (Establishment)</td>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>	
+Mrs. Raj Rani</td>
+				<td>Jr. Stenographer</td>
+			</tr>
+			<tr>
+				<td>8</td>
+				<td>Mr. Vikrant Jamwal</td>
+				<td>	
+Head Assistant</td>
+			</tr>
+			<tr>
+				<td>9</td>
+				<td>Mr. Jagmohan</td>
+				<td>Workshop / Lab Assistant</td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td>	
+Mr. Ajit Paul Singh</td>
+				<td>Workshop / Lab Assistant</td>
+			</tr>
+			<tr>
+				<td>11</td>
+				<td>	
+Mrs. Gulshan Devi</td>
+				<td>	
+Jr. Assistant</td>
+			</tr>
+			<tr>
+				<td>12</td>
+				<td>Mrs. Kamlesh Kumari</td>
+				<td>Jr. Assistant</td>
+			</tr>
+			<tr>
+				<td>13</td>
+				<td>Mrs. Tilak Raj</td>
+				<td>	
+Lab Attendant</td>
+			</tr>
+			<tr>
+				<td>14</td>
+				<td>Mr. Murad Ali</td>
+				<td>Orderly</td>
+			</tr>
+			<tr>
+				<td>15</td>
+				<td>Mr. Karim Baksh</td>
+				<td>Orderly</td>
+			</tr>
+		</table>
+	</div>
 					
-    
   );
 }
 export default Departments;

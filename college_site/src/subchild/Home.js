@@ -11,28 +11,32 @@ import Imageslider from '../components/imageSlider';
 import Card from '../components/card';
 import Message from '../components/message';
 import TextAnim from '../components/fade_in_text_anim_home';
+import gcet_1 from '../Assets/gcet_1.jpg';
+import gcet_2 from '../Assets/gcet_2.jpg';
+import gcet_3 from '../Assets/gcet_3.jpg';
+import gcet_4 from '../Assets/gcet_4.jpg';
 
 
 const Home = () => {
   return (
     <div className='container-fluid'>
       <div className='Home'>
-        <div className='col-lg-12 text-center'>
+        <div className='col-lg-12 text-center' >
       <TextAnim/>
-          <Imageslider />
+          <Imageslider href={[gcet_1, gcet_2, gcet_3, gcet_4, Department_Image, CLUB_LOGO]}/>
         </div>
       </div>
-    <div className='container'>
+    <div className='container '>
       <div className='row justify-content-center'>
-        <div className='col-lg-6'>
+        <div className='col-lg-6 notification'>
 
         <Noticeboard/>
         </div>
       </div>
-      <div className='row'>
+      <div className='row cards'>
 
         <Card name='Annual Report' href={Department_Image}/>
-        <Card name='Notifications / Orders' />
+        <Card name='Notifications / Orders'  />
         <Card name="HOD's List" />
         <Card name='Grievance Cell' />
         <Card name='AntiRagging' />

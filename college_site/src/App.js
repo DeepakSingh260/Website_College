@@ -27,10 +27,7 @@ import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import Admissions from './subchild/Admissions';
 
-
-import Gallery from 'react-photo-gallery';
-import Imageslider from './components/imageSlider';
-
+import Footer from './components/Footer';
 
 
 
@@ -102,6 +99,8 @@ function App() {
                 <Route exact path="/dashboard" element={<Dashboard />} />
               
               </Routes>
+
+              <Footer/>
            
       
 

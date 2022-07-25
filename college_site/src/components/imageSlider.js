@@ -1,7 +1,9 @@
-import gcet_1 from '../Assets/gcet_1.jpg';
-import gcet_2 from '../Assets/gcet_2.jpg';
-import gcet_3 from '../Assets/gcet_3.jpg';
-import gcet_4 from '../Assets/gcet_4.jpg';
+import gcet_1 from '../Assets/Garden.jpg';
+import gcet_2 from '../Assets/Lab1.jpg';
+import gcet_3 from '../Assets/Mechanical1.jpg';
+import gcet_4 from '../Assets/gcet_3.jpg';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const imageslider = (props) => {
     return (
@@ -32,6 +34,7 @@ const imageslider = (props) => {
                     <div class="item">
                         <img class="d-block" src={props.href} alt="Third slide" />
                     </div> */}
+
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>

@@ -1,5 +1,11 @@
-/* .Home{
-} */
+.Home{
+  float: left;
+  height: 60%;
+  width: 60%;
+  align-items: center;
+  margin-left: 100px;
+ 
+}
 .card {
     width:250px;
     display: block;
@@ -34,5 +40,13 @@
     color:#fff;
     
     
+  }
+  .notification{
+    
+   width: auto;
+  }
+  .cards{
+    float: left;
+    margin-left: -5px;
   }
   

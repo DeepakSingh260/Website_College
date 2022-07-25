@@ -42,6 +42,11 @@ import Elec_dep from './subchild/electrical_dep';
 import E_C_dep from './subchild/electronics_dep';
 import Mech_dep from './subchild/mechanical_dep';
 
+import Login from "./Login";
+import Register from "./Register";
+import Reset from "./Reset";
+import Dashboard from "./Dashboard";
+
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -91,7 +96,10 @@ function App() {
                 <Route path='/electricl_department' element = {<Elec_dep/>} />
                 <Route path='/e_c_department' element = {<E_C_dep/>} />
                 <Route path='/mechanical_department' element = {<Mech_dep/>} />
-                
+                <Route path='/login' element={<Login />} />
+                <Route exact path="/register" element={<Register />} />
+                <Route exact path="/reset" element={<Reset />} />
+                <Route exact path="/dashboard" element={<Dashboard />} />
               
               </Routes>
            

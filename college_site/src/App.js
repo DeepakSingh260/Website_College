@@ -99,6 +99,7 @@ function App() {
                 <Route exact path="/reset" element={<Reset />} />
                 <Route exact path="/dashboard" element={<Dashboard />} />
                 <Route exact path="/student_council" element={<Council />} />
+                <Route exact path="/log_in" element={<Login />} />
               </Routes>
 
               <Footer />

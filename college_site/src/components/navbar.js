@@ -78,6 +78,10 @@ const navbar = () =>{
 											<a href="/about_us">About Us</a>
 											
 										</li>
+										<li>
+											<a href="/log_in">Log In</a>
+											
+										</li>
 										
 											
 									</ul>

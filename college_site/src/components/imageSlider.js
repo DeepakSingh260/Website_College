@@ -11,8 +11,13 @@ const imageslider = (props) => {
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    {
+                        props.href.slice(1).map((e,index) =>
+                            <li data-target="#carouselExampleIndicators" data-slide-to={""+(index+1)}></li>
+                        )
+                    }
+                    {/* <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> */}
                 </ol>
                 <div class="carousel-inner">
                             <div class="item active">

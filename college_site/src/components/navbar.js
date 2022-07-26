@@ -61,7 +61,7 @@ const navbar = () =>{
 												
 											</ul>
 										</li>
-										<li><a data-new="new" href="https://www.coeju.com/">Results</a></li>
+										<li><a href="https://www.coeju.com/">Results</a></li>
 										<li class="menu-item-has-children">
 											<a href="javascript:void(0);">Admissions</a>
 											<ul class="sub-menu">

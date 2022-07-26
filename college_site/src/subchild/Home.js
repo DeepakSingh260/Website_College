@@ -16,38 +16,47 @@ import gcet_2 from '../Assets/Lab1.jpg';
 import gcet_3 from '../Assets/gcet_3.jpg';
 import gcet_4 from '../Assets/Mechanical1.jpg';
 
+import annual_report_img from '../Assets/card_imgs/card1.jpg'
+import annual_report2_img from '../Assets/card_imgs/card2.jpg'
+import antiragging_img from '../Assets/card_imgs/card3.jpg'
+import discipline_img from '../Assets/card_imgs/card4.jpg'
+import grievance_cell_img from '../Assets/card_imgs/card5.jpg'
+import harrassment_img from '../Assets/card_imgs/card3.jpg'
+import student_feedback_img from '../Assets/card_imgs/card4.jpg'
+
 
 const Home = () => {
   return (
-    <div className='container-fluid'>
+    <div className='container'>
       <div className='Home'>
-        <div className='col-lg-12 text-center' >
-      <TextAnim/>
-          <Imageslider href={[gcet_1, gcet_2, gcet_3, gcet_4, Department_Image, CLUB_LOGO]}/>
+          <TextAnim />
+        <div className='row justify-content-center align-items-start'>
+          <div className='col-lg-8 col-sm-12' >
+            <Imageslider href={[gcet_1, gcet_2, gcet_3, gcet_4]} />
+          </div>
+          <div className='col-lg-4 col-sm-12 notification'>
+            <Noticeboard />
+          </div>
+
+        </div>
+
+      </div>
+      <div className='container '>
+        <div className='row justify-content-center cards'>
+
+          <Card name='NSS' href={annual_report_img} />
+          <Card name='Training & Placement ' href={student_feedback_img} />
+          <Card name="Red Ribbon Club" href={discipline_img} />
+          <Card name='Khidmat Club' href={grievance_cell_img} />
+          <Card name='Mechanical IQ Cell' href={student_feedback_img} />
+          <Card name='Road Safety Club' href={antiragging_img} />
+          <Card name='Royal Mechnocrats' href={discipline_img} />
+          <Card name='Sexual Harassment/Eve-Teasing Committee' href={harrassment_img} />
+          <Card name='Student Feedback' href={student_feedback_img} />
+
         </div>
       </div>
-    <div className='container '>
-      <div className='row justify-content-center'>
-        <div className='col-lg-6 notification'>
-
-        <Noticeboard/>
-        </div>
-      </div>
-      <div className='row cards'>
-
-        <Card name='Annual Report' href={Department_Image}/>
-        <Card name='Notifications / Orders'  />
-        <Card name="HOD's List" />
-        <Card name='Grievance Cell' />
-        <Card name='AntiRagging' />
-        <Card name='Anti-Ragging Committee' />
-        <Card name='Disciplinary Committee' />
-        <Card name='Sexual Harassment/Eve-Teasing Committee' />
-        <Card name='Student Feedback' />
-
-      </div>
-     </div> 
-     </div>
+    </div>
   );
 }
 

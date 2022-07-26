@@ -51,7 +51,7 @@ const navbar = () =>{
 									<li><a  href="/">Home</a></li>
 										
 										<li class="menu-item-has-children">
-											<a href="javascript:void(0);">Subjects</a>
+											<a href="javascript:void(0);">Departments</a>
 											<ul class="sub-menu">
 												<li><a href="/civil_department">Civil Department</a></li>
 												<li><a href="/computer_department">Computer Department</a></li>
@@ -62,70 +62,24 @@ const navbar = () =>{
 											</ul>
 										</li>
 										<li><a data-new="new" href="https://www.coeju.com/">Results</a></li>
-										<li class="menu-item-has-children">
-											<a href="javascript:void(0);">Admissions</a>
-											<ul class="sub-menu">
-												<li><a href="/admissions">Admissions</a></li>
-												<li><a href="admissionsdetail.html">Admission Detail</a></li>
-											</ul>
+										<li >
+											<a href="/admissions">Admissions</a>
+											
 										</li>
 										<li class="menu-item-has-children">
-											<a href="javascript:void(0);">Depts</a>
+											<a href="javascript:void(0);">Clubs & Council</a>
 											<ul class="sub-menu">
-												<li><a href="/department">Departments</a></li>
-												<li><a href="departmentdetail.html">Department Detail</a></li>
+												<li><a href="/student_council">Student Council</a></li>
+												
 											</ul>
 										</li>
-										<li><a href="campuses.html">Campuses</a></li>
-										<li class="menu-item-has-children">
-											<a href="javascript:void(0);">Contact us</a>
-											<ul class="sub-menu">
-												<li><a href="contactusvone.html">Contact us V-one</a></li>
-												<li><a href="contactusvtwo.html">Contact us V-two</a></li>
-											</ul>
+										<li><a href="/administration">Administration</a></li>
+										<li>
+											<a href="/about_us">About Us</a>
+											
 										</li>
-										<li class="menu-item-has-children">
-											<a href="javascript:void(0);">Pages</a>
-											<ul class="sub-menu">
-												<li class="menu-item-has-children">
-													<a href="javascript:void(0);">About University</a>
-													<ul class="sub-menu">
-														<li><a href="aboutcampuslife.html">Our Campus Life</a></li>
-														<li><a href="abouthonorsawards.html">Our Honor &amp; Awards</a></li>
-														<li><a href="aboutleadership.html">Our Leadership</a></li>
-														<li><a href="aboutobjectives.html">OurObjectives</a></li>
-														<li><a href="aboutouridentity.html">Our Identity</a></li>
-														<li><a href="aboutrectormessage.html">Rector Message</a></li>
-														<li><a href="aboutvisionmission.html">Our Missions</a></li>
-													</ul>
-												</li>
-												<li class="menu-item-has-children">
-													<a href="javascript:void(0);">News</a>
-													<ul class="sub-menu">
-														<li><a href="newslist.html">News List</a></li>
-														<li><a href="newsgrid.html">News Grid</a></li>
-														<li><a href="newsgridsidebar.html">News Grid Sidebar</a></li>
-														<li><a href="newsdetail.html">News Detail</a></li>
-													</ul>
-												</li>
-												<li class="menu-item-has-children">
-													<a href="javascript:void(0);">Our Jobs</a>
-													<ul class="sub-menu">
-														<li><a href="jobs.html">Jobs</a></li>
-														<li><a href="jobdetail.html">Job Detail</a></li>
-													</ul>
-												</li>
-												<li class="menu-item-has-children">
-													<a href="javascript:void(0);">Others</a>
-													<ul class="sub-menu">
-														<li><a href="gallery.html">gallary</a></li>
-														<li><a href="faqs.html">FAQ</a></li>
-														<li><a href="404error.html">404 Error</a></li>
-														<li><a href="comingsoon.html">coming soon</a></li>
-													</ul>
-												</li>
-											</ul>
-										</li>
+										
+											
 									</ul>
 								</div>
 							</nav>

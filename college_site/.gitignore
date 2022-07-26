@@ -64,3 +64,5 @@ node_modules/
 
 # dotenv environment variables file
 .env
+
+.college_site/node_modules/.cache/default-development/6.pack

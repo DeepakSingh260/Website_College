@@ -5,6 +5,14 @@
     align-items: center;
     justify-content: center;
   }
+  body{
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .update_form{
+    padding: 50px;
+  }
   
   .dashboard__container {
     display: flex;

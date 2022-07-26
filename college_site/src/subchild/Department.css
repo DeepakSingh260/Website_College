@@ -1,4 +1,15 @@
 .Department{
-    margin-top: 150px;
+    
     padding: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.caption{
+    width: auto;
+    caption-side: top;
+    text-align: center;
+}
+.table_dep{
+    border: 2px solid forestgreen;
+    width: 800px;
 }

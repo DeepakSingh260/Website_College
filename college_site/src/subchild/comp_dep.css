@@ -6,13 +6,29 @@
 .Introduction{
     background-color: gainsboro;
     color: black;
-    
+    word-spacing: 5%;
+    letter-spacing: 3%;
     border-radius: 2%;
+    
 }
 .desc{
     margin-top: 20px;
     text-align: left;
     font-size: large;
+    word-spacing: 5%;
+    inline-size: 90%;
+    row-gap: 10px;
+    letter-spacing: 3%;
+    font-style:oblique;
     
+}
+.comp_slider{
+    height: 50%;
+    width: 100%;
+    padding: 50px;
+}
+.context{
+    float: left;
+    margin: 50px;
 }
 

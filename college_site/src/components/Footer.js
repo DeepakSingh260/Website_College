@@ -3,7 +3,7 @@ import { MDBFooter } from 'mdb-react-ui-kit';
 
 const Footer =()=>{
     return(
-        <div className="footer">
+        <div className="footer" style={{float :"left" ,width:"100%"}}>
                < MDBFooter bgColor='light' className='text-center text-lg-start text-muted'>
       
 

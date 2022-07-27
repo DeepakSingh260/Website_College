@@ -23,7 +23,7 @@ const Noticeboard = () =>{
     }, []);
 	
     return (
-        <div class="card tg-widget tg-widgetnoticeboard" >
+        <div class="card card-home " >
 									<div class="card-title tg-widgettitle">
 										<h3 class='text-center'>Notice Board</h3>  
 									</div>

@@ -27,12 +27,12 @@ const Footer =()=>{
             <div className='col-md-3 col-lg-2 col-xl-2 mx-auto mb-4'>
               <h6 className='text-uppercase fw-bold mb-4'>Useful links</h6>
               <p>
-                <a href='#!' className='text-reset'>
+                <a href='/admissions' className='text-reset'>
                   Admissions
                 </a>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
+                <a href='/about_us' className='text-reset'>
                   About us
                 </a>
               </p>
@@ -42,7 +42,7 @@ const Footer =()=>{
                 </a>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
+                <a href='/administration' className='text-reset'>
                   Departments
                 </a>
               </p>

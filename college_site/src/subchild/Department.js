@@ -167,6 +167,87 @@ Lab Attendant</td>
 				<td>Orderly</td>
 			</tr>
 		</table>
+		<table className='table_dep'>
+			<caption className="caption">LIBRARY SECTION</caption>
+			<tr>
+				<th>S No.</th>
+				<th>Name </th>
+				<th>Post</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>	
+Mr. Ranjan Singh</td>
+				<td>Librarian</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>	
+Mr. Sumit Kumar</td>
+				<td>Sr. Lab Technician</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Mrs. Nidhi Sharma</td>
+				<td>Jr. Assistant</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>Mr. Ashish Gupta</td>
+				<td>Lab Attendant</td>
+			</tr>
+			
+		</table>
+		<table className='table_dep'>
+			<caption className="caption">ACCOUNTS SECTION</caption>
+			<tr>
+				<th>S No.</th>
+				<th>Name </th>
+				<th>Post</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>	
+Mrs. Sunita Kumari Dhar</td>
+				<td>Accounts Officer</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Mr. Ram Dass Sharma</td>
+				<td>Assistant Accounts Officer</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Mr. Sunil Kumar Sharma</td>
+				<td>Senior Assistant / Cashier</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>Mr. Hitesh Kumar</td>
+				<td>Jr. Assistant</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>Mr. Surinder Lal</td>
+				<td>	
+Workshop Lab Attendant</td>
+			</tr>
+			
+		</table>
+		<table className='table_dep'>
+			<caption className="caption">SECURITY SECTION</caption>
+			<tr>
+				<th>S No.</th>
+				<th>Name </th>
+				<th>Post</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>	
+				Sh. Vishal Vaidr</td>
+				<td>I/C Securityr</td>
+			</tr>
+			</table>
 	</div>
 					
   );

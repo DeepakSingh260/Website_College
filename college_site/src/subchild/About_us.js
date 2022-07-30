@@ -36,9 +36,10 @@ const About_us = () =>{
       <div className="Introduction">
  
         <h1>{heading}</h1>
-        <p>{desc}</p>
+        
 
       </div>
+      <p>{desc}</p>
 			</div>
 		
     

@@ -46,6 +46,7 @@ import Login from "./Login";
 import Register from "./Register";
 import Reset from "./Reset";
 import Dashboard from "./Dashboard";
+import Council from './subchild/student_council';
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -88,7 +89,7 @@ function App() {
                 <Route path="/" element={<Home />}/>
                 <Route path='/gallery' element={<BasicRows/>}/>
                 <Route path="/about_us" element={<About_us />} />
-                <Route path="/department" element={<Departments />} />
+                <Route path="/administration" element={<Departments />} />
                 <Route path="*" element={<Academics />}/>
                 <Route path="/Admissions" element = {<Admissions/>} />
                 <Route path="/civil_department" element = {<Civil_dep/>} />
@@ -104,6 +105,9 @@ function App() {
                 <Route exact path="/t&p_cell" element={<Tp_cell />} />
                 
               
+                <Route exact path="/dashboard" element={<Dashboard />} />
+                <Route exact path="/student_council" element={<Council />} />
+                <Route exact path="/log_in" element={<Login />} />
               </Routes>
 
               <Footer />

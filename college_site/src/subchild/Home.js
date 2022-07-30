@@ -34,6 +34,8 @@ import t_p from '../Assets/card_imgs/t&p.jpg'
 import road from '../Assets/card_imgs/road.jpg'
 
 
+
+
 const Home = () => {
   return (
     <div className='container'>
@@ -49,6 +51,7 @@ const Home = () => {
 
         </div>
 
+      </div>
       <div className='container '>
         <div className='row justify-content-center cards'>
 
@@ -62,7 +65,6 @@ const Home = () => {
           <Card id='card_img_no_link' name='Royal Mechnocrats' href={mech} external='False'/>
         </div>
       </div>
-
     </div>
   );
 }

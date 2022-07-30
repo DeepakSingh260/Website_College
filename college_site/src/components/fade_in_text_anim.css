@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ooh+Baby&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+.fadeInTextAnim{
+  background: #f7f7f7;
+  border-radius: 20px;
+}
 
 .animate-charcter {
   text-transform: uppercase;

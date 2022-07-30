@@ -1,7 +1,8 @@
 .card-element{
     transition: all .5s;
     border-radius: 5px;
-    border: 5px solid white;
+    border: 5px solid rgb(200, 42, 42);
+    max-height: 20vh;
 }
 
 .card-element:hover{
@@ -17,6 +18,10 @@
     left: 0;
     display: block;
     content: "";
+}
+
+.card-element img{
+    
 }
 
 .card-element:hover .card-image::after{

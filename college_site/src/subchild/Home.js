@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect,useState } from 'react';
 import Department_Image from '../Assets/civil_dep.jpg';
 import CLUB_LOGO from '../Assets/gcet_6.jpg';
 import './Home.css';
@@ -24,8 +24,22 @@ import grievance_cell_img from '../Assets/card_imgs/card5.jpg'
 import harrassment_img from '../Assets/card_imgs/card3.jpg'
 import student_feedback_img from '../Assets/card_imgs/card4.jpg'
 
+import {ref as refer, getStorage, getDownloadURL} from "firebase/storage"
+import app from '../firebase';
+
 
 const Home = () => {
+  const storage = getStorage(app)
+  const reference = refer(storage,"clubs.jpg")
+  console.log(getDownloadURL(reference))
+  
+  const [heading , setTodo] =  useState("/");
+  useEffect (()=>{
+    getDownloadURL(reference).then((value)=>{
+      setTodo(value)
+    })
+  },[]);
+
   return (
     <div className='container'>
       <div className='Home'>
@@ -45,7 +59,7 @@ const Home = () => {
         <div className='row justify-content-center cards'>
 
           <Card name='NSS' href={annual_report_img} />
-          <Card name='Training & Placement ' href={student_feedback_img} />
+          <Card name='Training & Placement ' href={annual_report2_img} />
           <Card name="Red Ribbon Club" href={discipline_img} />
           <Card name='Khidmat Club' href={grievance_cell_img} />
           <Card name='Mechanical IQ Cell' href={student_feedback_img} />

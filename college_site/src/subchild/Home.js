@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component ,useEffect,useState } from 'react';
 import Department_Image from '../Assets/civil_dep.jpg';
 import CLUB_LOGO from '../Assets/gcet_6.jpg';
 import './Home.css';
@@ -33,10 +33,21 @@ import red_ribbon from '../Assets/card_imgs/red_ribbon.jpeg'
 import t_p from '../Assets/card_imgs/t&p.jpg'
 import road from '../Assets/card_imgs/road.jpg'
 
-
+import {ref as refer, getStorage, getDownloadURL} from "firebase/storage"
+import app from '../firebase';
 
 
 const Home = () => {
+  const storage = getStorage(app)
+  const reference = refer(storage,"clubs.jpg")
+  console.log(getDownloadURL(reference))
+  
+  const [heading , setTodo] =  useState("/");
+  useEffect (()=>{
+    getDownloadURL(reference).then((value)=>{
+      setTodo(value)
+    })
+  },[]);
   return (
     <div className='container'>
       <div className='Home'>

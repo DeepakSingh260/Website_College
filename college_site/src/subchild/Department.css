@@ -1,4 +1,4 @@
-.Department{
+/* .Department{
     
     padding: 20px;
     margin-left: 50px;
@@ -12,4 +12,14 @@
 .table_dep{
     border: 2px solid forestgreen;
     width: 800px;
+} */
+
+thead{
+    background-color: #b01517d6 !important;
+    color: aliceblue;
+}
+
+.table caption{
+    caption-side: top;
+    
 }

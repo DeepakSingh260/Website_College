@@ -15,26 +15,26 @@ import logo_gcet from "../Assets/images/logo_gcet.png";
 
 
 
-const navbar = () =>{
-  return (
-	
-    <header id="tg-header" class="tg-header tg-haslayout">
-			
+const navbar = () => {
+	return (
+
+		<header id="tg-header" class="tg-header tg-haslayout">
+
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 						<div class="tg-logoandnoticeboard">
-								<strong class="tg-logo row align-items-center ">
-									<div className='col-sm-2'>
-									<img src={logo_gcet} alt="GCET Jammu"/>
+							<strong class="tg-logo row align-items-center ">
+								<div className='col-sm-2'>
+									<img src={logo_gcet} alt="GCET Jammu" />
 
-									</div>
-									<div className='col-sm-10'>
+								</div>
+								<div className='col-sm-10'>
 									<h2>Government College of Engineering & Technology</h2>
 
-									</div>
-								</strong>
-							
+								</div>
+							</strong>
+
 						</div>
 						<div class="tg-navigationarea">
 							<nav id="tg-nav" class="tg-nav">
@@ -48,46 +48,46 @@ const navbar = () =>{
 								</div>
 								<div id="tg-navigation" class="collapse navbar-collapse tg-navigation">
 									<ul>
-									<li><a  href="/">Home</a></li>
-										
+										<li><a href="/">Home</a></li>
+
 										<li class="menu-item-has-children">
-											<a href="javascript:void(0);">Departments</a>
-											<ul class="sub-menu">
-												<li><a href="/civil_department">Civil Department</a></li>
-												<li><a href="/computer_department">Computer Department</a></li>
-												<li><a href="/electricl_department">Electrical Department</a></li>
-												<li><a href="/e_c_department">E&C Department</a></li>
-												<li><a href="/mechanical_department">Mechanical Department</a></li>
-												
+											<a class='dropdown-toggle' data-toggle='dropdown' aria-expanded="false" id="navbarDropdownMenuLinkDepts" href="javascript:void(0);">Departments</a>
+											<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkDepts">
+												<li><a class='dropdown-item' href="/civil_department">Civil Department</a></li>
+												<li><a class='dropdown-item' href="/computer_department">Computer Department</a></li>
+												<li><a class='dropdown-item' href="/electricl_department">Electrical Department</a></li>
+												<li><a class='dropdown-item' href="/e_c_department">E&C Department</a></li>
+												<li><a class='dropdown-item' href="/mechanical_department">Mechanical Department</a></li>
+
 											</ul>
 										</li>
 										<li><a href="https://www.coeju.com/">Results</a></li>
 										<li class="menu-item-has-children">
-											<a href="javascript:void(0);">Admissions</a>
-											<ul class="sub-menu">
-												<li><a href="/admissions">Admissions</a></li>
-												<li><a href="admissionsdetail.html">Admission Detail</a></li>
+											<a class='dropdown-toggle' data-toggle='dropdown' aria-expanded="false" id="navbarDropdownMenuLinkAdm" href="javascript:void(0);">Admissions</a>
+											<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkAdm">
+												<li><a class='dropdown-item' href="/admissions">Admissions</a></li>
+												<li><a class='dropdown-item' href="admissionsdetail.html">Admission Detail</a></li>
 											</ul>
 
 										</li>
 										<li class="menu-item-has-children">
-											<a href="javascript:void(0);">Clubs & Council</a>
-											<ul class="sub-menu">
-												<li><a href="/student_council">Student Council</a></li>
-												
+											<a class='dropdown-toggle' data-toggle='dropdown' aria-expanded="false" id="navbarDropdownMenuLinkClb" href="javascript:void(0);">Clubs & Council</a>
+											<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkClb">
+												<li><a class='dropdown-item' href="/student_council">Student Council</a></li>
+
 											</ul>
 										</li>
 										<li><a href="/administration">Administration</a></li>
 										<li>
 											<a href="/about_us">About Us</a>
-											
+
 										</li>
 										<li>
 											<a href="/log_in">Log In</a>
-											
+
 										</li>
-										
-											
+
+
 									</ul>
 								</div>
 							</nav>
@@ -102,8 +102,8 @@ const navbar = () =>{
 				</div>
 			</div>
 		</header>
-  );
-  
+	);
+
 }
 
 

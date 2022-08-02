@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Department_Image from '../Assets/civil_dep.jpg';
 import CLUB_LOGO from '../Assets/gcet_6.jpg';
 import './Home.css';
@@ -24,6 +24,17 @@ import grievance_cell_img from '../Assets/card_imgs/card5.jpg'
 import harrassment_img from '../Assets/card_imgs/card3.jpg'
 import student_feedback_img from '../Assets/card_imgs/card4.jpg'
 
+import nss from '../Assets/card_imgs/nsslogo.png'
+import khidmat from '../Assets/card_imgs/khidmat.jpg'
+import mech from '../Assets/card_imgs/mech.jpeg'
+import mech_iq from '../Assets/card_imgs/mech_iq.jpeg'
+import startup from '../Assets/card_imgs/startup.jpg'
+import red_ribbon from '../Assets/card_imgs/red_ribbon.jpeg'
+import t_p from '../Assets/card_imgs/t&p.jpg'
+import road from '../Assets/card_imgs/road.jpg'
+
+
+
 
 const Home = () => {
   return (
@@ -44,21 +55,20 @@ const Home = () => {
       <div className='container '>
         <div className='row justify-content-center cards'>
 
-          <Card name='NSS' href={annual_report_img} />
-          <Card name='Training & Placement ' href={student_feedback_img} />
-          <Card name="Red Ribbon Club" href={discipline_img} />
-          <Card name='Khidmat Club' href={grievance_cell_img} />
-          <Card name='Mechanical IQ Cell' href={student_feedback_img} />
-          <Card name='Road Safety Club' href={antiragging_img} />
-          <Card name='Royal Mechnocrats' href={discipline_img} />
-          <Card name='Sexual Harassment/Eve-Teasing Committee' href={harrassment_img} />
-          <Card name='Student Feedback' href={student_feedback_img} />
-
+          <Card id='card_img_no_link' name='NSS' href={nss} link="nss"external='False'/>
+          <Card id='card_img_no_link' name='Startup Cell' href={startup} link="startup_cell"external='False'/>
+          <Card id='card_img_link' name='Training & Placement ' href={t_p} link="/t&p_cell" external='True'/>
+          <Card id='card_img_no_link' name="Red Ribbon Club" href={red_ribbon} external='False'/>
+          <Card id='card_img_no_link' name='Khidmat Club' href={khidmat} external='False'/>
+          <Card id='card_img_no_link' name='Mechanical IQ Cell' href={mech_iq} external='False'/>
+          <Card id='card_img_no_link' name='Road Safety Club' href={road} external='False'/>
+          <Card id='card_img_no_link' name='Royal Mechnocrats' href={mech} external='False'/>
         </div>
       </div>
     </div>
   );
 }
+
 
 class CardBody extends React.Component {
   render() {

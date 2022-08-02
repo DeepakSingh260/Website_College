@@ -38,6 +38,9 @@ import Comp_dep from './subchild/comp_dep';
 import Elec_dep from './subchild/electrical_dep';
 import E_C_dep from './subchild/electronics_dep';
 import Mech_dep from './subchild/mechanical_dep';
+import Startup_cell from './subchild/startup';
+import NSS from './subchild/nss';
+import Tp_cell from './subchild/t_p';
 
 import Login from "./Login";
 import Register from "./Register";
@@ -97,6 +100,11 @@ function App() {
                 <Route path='/login' element={<Login />} />
                 <Route exact path="/register" element={<Register />} />
                 <Route exact path="/reset" element={<Reset />} />
+                <Route exact path="/nss" element={<NSS />} />
+                <Route exact path="/startup_cell" element={<Startup_cell />} />
+                <Route exact path="/t&p_cell" element={<Tp_cell />} />
+                
+              
                 <Route exact path="/dashboard" element={<Dashboard />} />
                 <Route exact path="/student_council" element={<Council />} />
                 <Route exact path="/log_in" element={<Login />} />

@@ -1,21 +1,39 @@
 
 import React from 'react';
 
-
-
-import img01 from "../Assets/images/flags/img-01.jpg";
-import img02 from "../Assets/images/flags/img-02.jpg";
-import img03 from "../Assets/images/flags/img-03.jpg";
-import themepost_img01 from "../Assets/images/themepost/img-01.jpg"
-import themepost_img02 from "../Assets/images/themepost/img-02.jpg"
-import themepost_img03 from "../Assets/images/themepost/img-03.jpg"
-import themepost_img04 from "../Assets/images/themepost/img-04.jpg"
-import GCET_Jammu1 from "../Assets/images/GCET_Jammu1.jpg";
 import logo_gcet from "../Assets/images/logo_gcet.png";
 
+import {ref as refer, getStorage, getDownloadURL} from "firebase/storage"
+import app from '../firebase';
+import { useEffect, useState } from "react";
 
 
-const navbar = () => {
+const Navbar = () => {
+	const storage = getStorage(app)
+	const admin_reference = refer(storage,"Downloads/admission_form.doc")
+	
+	const [admin , setAdmin] = useState("/")
+	useEffect(()=>{
+		getDownloadURL(admin_reference).then((value)=>{
+			setAdmin(value)
+		})
+	})
+	const emp_reference = refer(storage,"Downloads/emp_form.doc")
+	
+	const [emp , setEmp] = useState("/")
+	useEffect(()=>{
+		getDownloadURL(emp_reference).then((value)=>{
+			setEmp(value)
+		})
+	})
+	const noc_reference = refer(storage,"Downloads/stud_form.doc")
+	
+	const [noc , setNoc] = useState("/")
+	useEffect(()=>{
+		getDownloadURL(noc_reference).then((value)=>{
+			setNoc(value)
+		})
+	})
 	return (
 
 		<header id="tg-header" class="tg-header tg-haslayout">
@@ -77,6 +95,14 @@ const navbar = () => {
 
 											</ul>
 										</li>
+										<li class="menu-item-has-children">
+											<a class='dropdown-toggle' data-toggle='dropdown' aria-expanded="false" id="navbarDropdownMenuLinkClb" href="javascript:void(0);">Download</a>
+											<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkClb">
+												<li><a class='dropdown-item' href={admin}>Admission Form</a></li>
+												<li><a class='dropdown-item' href={emp}>EMPLOYEE NOC Form</a></li>
+												<li><a class='dropdown-item' href={noc}>STUDENT NOC FORM</a></li>
+											</ul>
+										</li>
 										<li><a href="/administration">Administration</a></li>
 										<li>
 											<a href="/about_us">About Us</a>
@@ -108,5 +134,5 @@ const navbar = () => {
 
 
 
-export default navbar;
+export default Navbar;
 

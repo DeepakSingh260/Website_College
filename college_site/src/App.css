@@ -3,23 +3,21 @@
   margin-top: 0px!important;
 }
 .App {
-  /* text-align: left; */
+  
   background-color: white;
-  /* background-color: rgb(132, 122, 122); */
+  width: 100%;
+  
 }
-
+body{
+  width: 100%;
+}
 .draw_box{
   background-color: white;
   position:relative;
   width: 100%;
   /* overflow: hidden  ; */
 }
-/* .class_logo{
-  height: 60px;
-  width: 60px;
-  padding: 10px;
-  float: left;
-} */
+
 
 .dropdown-item:hover{
   background-color: brown!important;
@@ -60,13 +58,7 @@
 .carousel-inner img{
   margin: 0 auto;
   height: 100%;
-  width: 100%;
-  /* object-fit: cover; */
-  /* top: 100% !important;; */
-  /* background-position: 50% 70%!important; */
-
-  
-  
+  width: 100%;  
 }
 
 .carousel-control.left, .carousel-control.right {
@@ -77,9 +69,7 @@
 
 .carousel-inner .item{
   background-color: white;
-  /* width: 100vw!important;
-  height: 70vh; */
-  background-position: 50% 70%!important;
+
 }
 
 .tg-logo div img{

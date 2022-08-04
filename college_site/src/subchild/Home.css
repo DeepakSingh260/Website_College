@@ -1,11 +1,6 @@
-/* .Home{
-  float: left;
-  height: 60%;
-  width: 60%;
-  align-items: center;
-  margin-left: 100px;
- 
-} */
+body{
+  width: 100%;
+}
 .card {
     width:250px;
     display: block;

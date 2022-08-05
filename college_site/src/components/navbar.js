@@ -3,34 +3,34 @@ import React from 'react';
 
 import logo_gcet from "../Assets/images/logo_gcet.png";
 
-import {ref as refer, getStorage, getDownloadURL} from "firebase/storage"
+import { ref as refer, getStorage, getDownloadURL } from "firebase/storage"
 import app from '../firebase';
 import { useEffect, useState } from "react";
 
 
 const Navbar = () => {
 	const storage = getStorage(app)
-	const admin_reference = refer(storage,"Downloads/admission_form.doc")
-	
-	const [admin , setAdmin] = useState("/")
-	useEffect(()=>{
-		getDownloadURL(admin_reference).then((value)=>{
+	const admin_reference = refer(storage, "Downloads/admission_form.doc")
+
+	const [admin, setAdmin] = useState("/")
+	useEffect(() => {
+		getDownloadURL(admin_reference).then((value) => {
 			setAdmin(value)
 		})
 	})
-	const emp_reference = refer(storage,"Downloads/emp_form.doc")
-	
-	const [emp , setEmp] = useState("/")
-	useEffect(()=>{
-		getDownloadURL(emp_reference).then((value)=>{
+	const emp_reference = refer(storage, "Downloads/emp_form.doc")
+
+	const [emp, setEmp] = useState("/")
+	useEffect(() => {
+		getDownloadURL(emp_reference).then((value) => {
 			setEmp(value)
 		})
 	})
-	const noc_reference = refer(storage,"Downloads/stud_form.doc")
-	
-	const [noc , setNoc] = useState("/")
-	useEffect(()=>{
-		getDownloadURL(noc_reference).then((value)=>{
+	const noc_reference = refer(storage, "Downloads/stud_form.doc")
+
+	const [noc, setNoc] = useState("/")
+	useEffect(() => {
+		getDownloadURL(noc_reference).then((value) => {
 			setNoc(value)
 		})
 	})
@@ -54,22 +54,17 @@ const Navbar = () => {
 							</strong>
 
 						</div>
-						<div class="tg-navigationarea">
-							<nav id="tg-nav" class="tg-nav">
-								<div class="navbar-header">
-									<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#tg-navigation" aria-expanded="false">
-										<span class="sr-only">Toggle navigation</span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-									</button>
-								</div>
-								<div id="tg-navigation" class="collapse navbar-collapse tg-navigation">
-									<ul>
-										<li><a href="/">Home</a></li>
+						<div>
+							<nav class="navbar navbar-expand-lg navbar-light bg-light">
+								<button class="navbar-toggler col-xs-12" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+									<span class="fas fa-bars"></span>
+								</button>
+								<div id="navbarNavDropdown" class="collapse navbar-collapse tg-navigation">
+									<ul className='navbar-nav'>
+										<li className='nav-item'><a className='nav-link' href="/">Home</a></li>
 
-										<li class="menu-item-has-children">
-											<a class='dropdown-toggle' data-toggle='dropdown' aria-expanded="false" id="navbarDropdownMenuLinkDepts" href="javascript:void(0);">Departments</a>
+										<li class="nav-item dropdown">
+											<a class='nav-link dropdown-toggle' data-toggle='dropdown' aria-expanded="false" id="navbarDropdownMenuLinkDepts" href="javascript:void(0);">Departments</a>
 											<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkDepts">
 												<li><a class='dropdown-item' href="/civil_department">Civil Department</a></li>
 												<li><a class='dropdown-item' href="/computer_department">Computer Department</a></li>
@@ -79,37 +74,37 @@ const Navbar = () => {
 
 											</ul>
 										</li>
-										<li><a href="https://www.coeju.com/">Results</a></li>
-										<li class="menu-item-has-children">
-											<a class='dropdown-toggle' data-toggle='dropdown' aria-expanded="false" id="navbarDropdownMenuLinkAdm" href="javascript:void(0);">Admissions</a>
+										<li className='nav-item'><a className='nav-link' href="https://www.coeju.com/">Results</a></li>
+										<li class="nav-item dropdown">
+											<a class='nav-link dropdown-toggle' data-toggle='dropdown' aria-expanded="false" id="navbarDropdownMenuLinkAdm" href="javascript:void(0);">Admissions</a>
 											<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkAdm">
 												<li><a class='dropdown-item' href="/admissions">Admissions</a></li>
 												<li><a class='dropdown-item' href="admissionsdetail.html">Admission Detail</a></li>
 											</ul>
 
 										</li>
-										<li class="menu-item-has-children">
-											<a class='dropdown-toggle' data-toggle='dropdown' aria-expanded="false" id="navbarDropdownMenuLinkClb" href="javascript:void(0);">Clubs & Council</a>
+										<li class="nav-item dropdown">
+											<a class='nav-link dropdown-toggle' data-toggle='dropdown' aria-expanded="false" id="navbarDropdownMenuLinkClb" href="javascript:void(0);">Clubs & Council</a>
 											<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkClb">
 												<li><a class='dropdown-item' href="/student_council">Student Council</a></li>
 
 											</ul>
 										</li>
-										<li class="menu-item-has-children">
-											<a class='dropdown-toggle' data-toggle='dropdown' aria-expanded="false" id="navbarDropdownMenuLinkClb" href="javascript:void(0);">Download</a>
+										<li class="nav-item dropdown">
+											<a class='nav-link dropdown-toggle' data-toggle='dropdown' aria-expanded="false" id="navbarDropdownMenuLinkClb" href="javascript:void(0);">Download</a>
 											<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkClb">
 												<li><a class='dropdown-item' href={admin}>Admission Form</a></li>
 												<li><a class='dropdown-item' href={emp}>EMPLOYEE NOC Form</a></li>
 												<li><a class='dropdown-item' href={noc}>STUDENT NOC FORM</a></li>
 											</ul>
 										</li>
-										<li><a href="/administration">Administration</a></li>
-										<li>
-											<a href="/about_us">About Us</a>
+										<li className='nav-item'><a className='nav-link' href="/administration">Administration</a></li>
+										<li className='nav-item'>
+											<a className='nav-link' href="/about_us">About Us</a>
 
 										</li>
-										<li>
-											<a href="/log_in">Log In</a>
+										<li className='nav-item'>
+											<a className='nav-link' href="/log_in">Log In</a>
 
 										</li>
 

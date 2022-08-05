@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './electrical_dep.css';
+import './civil_dep.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { getDatabase, onValue, ref, set } from "firebase/database";
@@ -36,21 +36,25 @@ const Elec_dep = () =>{
     
 
   return (
-    <div className='elec_dep'>
-      <div className='comp_slider'>
-        <div className='col-lg-12 text-center' >
-      <TextAnim/>
-          <Imageslider href={[gcet_1, gcet_2, gcet_3, gcet_4, Department_Image, CLUB_LOGO]}/>
-        </div>
-      </div>
-      <div>
- 
-        <h1  className="Introduction">{heading}</h1>
-        <p className='desc'>{desc}</p>
+    <div className='container'>
 
+    <div>
+      <div className='col-lg-6 text-center' >
+        <Imageslider href={[gcet_1, gcet_2, gcet_3, gcet_4, CLUB_LOGO]} />
       </div>
-			</div>
-		
+    </div>
+    <div>
+
+      <div className="heading text-center">
+
+        <h1>{heading}</h1>
+      </div>
+      <div className="text_body text-center">
+
+        <p className=''>{desc}</p>
+      </div>
+    </div>
+  </div>
     
   );
 }

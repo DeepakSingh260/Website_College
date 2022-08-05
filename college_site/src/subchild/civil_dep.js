@@ -16,45 +16,48 @@ import Imageslider from '../components/imageSlider';
 import TextAnim from '../components/fade_in_text_anim_home';
 
 
-const Civil_dep = () =>{
+const Civil_dep = () => {
 
-    const db = getDatabase(app)
-    const read = ref(db,'Departments/Civil/');
-    let Heading= ""
-    let description = ""
+  const db = getDatabase(app)
+  const read = ref(db, 'Departments/Civil/');
+  let Heading = ""
+  let description = ""
 
-    const [heading , setTodo] =  useState("Civil");
-    const [desc , setTodos] = useState("Idepartment")
-     
-    useEffect (()=>{
-      onValue(read,(snapshot)=>{
-        const data = snapshot.val()
+  const [heading, setTodo] = useState("Civil");
+  const [desc, setTodos] = useState("Idepartment")
 
-        setTodos(data.Description)
-        setTodo(data.Heading)
-      })
-    },[]);
-    
+  useEffect(() => {
+    onValue(read, (snapshot) => {
+      const data = snapshot.val()
+
+      setTodos(data.Description)
+      setTodo(data.Heading)
+    })
+  }, []);
+
 
   return (
-    <div className='civil_dep'>
-      
-      <div className='comp_slider'>
-        <div className='col-lg-12 text-center' >
-      <TextAnim/>
-          <Imageslider href={[gcet_1, gcet_2, gcet_3, gcet_4, Department_Image, CLUB_LOGO]}/>
+    <div className='container'>
+
+      <div>
+        <div className='col-lg-6 text-center' >
+          <Imageslider href={[gcet_1, gcet_2, gcet_3, gcet_4, CLUB_LOGO]} />
         </div>
       </div>
-     <div className='context'></div>
-      <div >
- 
-        <h1 className="Introduction">{heading}</h1>
-        <p className='desc'>{desc}</p>
+      <div>
 
+        <div className="heading text-center">
+
+          <h1>{heading}</h1>
+        </div>
+        <div className="text_body text-center">
+
+          <p className=''>{desc}</p>
+        </div>
       </div>
-			</div>
-		
-    
+    </div>
+
+
   );
 }
 export default Civil_dep;

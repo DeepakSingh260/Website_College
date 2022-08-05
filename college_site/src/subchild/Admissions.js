@@ -2,8 +2,7 @@ import React from 'react';
 import './Admissions.css'
 const Admissions = () =>{
   return (
-    <div className='admission'>
-      <h1>Admissions</h1>
+    <div className='admission container'>
      
      <span class="tg-lastmodified">Get Bright Future With Us</span>
      
@@ -56,47 +55,47 @@ const Admissions = () =>{
                        </div>
                      </li>
                      <li>
-                       <div >
-                         <span >02</span>
-                         <a >
+                       <div class="tg-result" >
+                         <span class="tg-counting">02</span>
+                         <a class="tg-btndownloadresult" href="javascript:void(0);">
                            <em>60 + 5% TFW</em>
                          </a>
-                         <div><p>MECHANICAL ENGINEERING</p></div>
+                         <div class="tg-description"><p>MECHANICAL ENGINEERING</p></div>
                        </div>
                      </li>
                      <li>
-                       <div >
-                         <span >03</span>
-                         <a >
+                       <div class="tg-result" >
+                         <span class="tg-counting">03</span>
+                         <a class="tg-btndownloadresult" href="javascript:void(0);">
                            <em>60 + 5% TFW</em>
                          </a>
-                         <div ><p>ELECTRICAL ENGINEERING</p></div>
+                         <div class="tg-description"><p>ELECTRICAL ENGINEERING</p></div>
                        </div>
                      </li>
                      <li>
-                       <div>
-                         <span >04</span>
-                         <a >
+                       <div class='tg-result'>
+                         <span class="tg-counting">04</span>
+                         <a class="tg-btndownloadresult" href="javascript:void(0);">
                            <em>60 + 5% TFW</em>
                          </a>
-                         <div ><p>ELECTRONICS & COMMUNICATION ENGINEERING</p></div>
+                         <div class="tg-description"><p>ELECTRONICS & COMMUNICATION ENGINEERING</p></div>
                        </div>
                      </li>
                      <li>
-                       <div>
-                         <span >05</span>
-                         <a >
+                       <div class='tg-result'>
+                         <span class="tg-counting">05</span>
+                         <a class="tg-btndownloadresult" href="javascript:void(0);">
                            <em>60 + 5% TFW</em>
                          </a>
-                         <div ><p>COMPUTER ENGINEERING</p></div>
+                         <div class="tg-description"><p>COMPUTER ENGINEERING</p></div>
                        </div>
                      </li>
                      <li>
-                       <div >
-                         <a >
+                       <div class="tg-result" >
+                         <a class="tg-btndownloadresult" href="javascript:void(0);">
                            <em>300 + 5% TFW</em>
                          </a>
-                         <div ><p>TOTAL</p></div>
+                         <div class="tg-description" ><p>TOTAL</p></div>
                        </div>
                      </li>
                      

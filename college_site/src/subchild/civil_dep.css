@@ -1,5 +1,23 @@
-.civil_dep{
-    /* margin: 250px; */
-    margin-left: 50px;
-    margin-right: 50px;
+.heading{
+    border-radius: 10px;
+}
+
+.heading h1{
+    /* color: aliceblue; */
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.text_body{
+    background-color: brown;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+.text_body p{
+    font-size: 1.25em;
+    line-height: 30px;
+    color: aliceblue;
+    
 }

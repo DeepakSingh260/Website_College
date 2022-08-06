@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.90224cf4.css",
-    "main.js": "/static/js/main.70d8dc32.js",
+    "main.css": "/static/css/main.5dd88c54.css",
+    "main.js": "/static/js/main.db011c2c.js",
     "static/js/787.61553875.chunk.js": "/static/js/787.61553875.chunk.js",
     "static/media/Garden.jpg": "/static/media/Garden.a5b69278a5d1e8316e1e.jpg",
     "static/media/Mechanical1.jpg": "/static/media/Mechanical1.e26cea9e9d0287946213.jpg",
@@ -22,6 +22,7 @@
     "static/media/fontawesome-webfont3e6e.ttf?v=4.7.0": "/static/media/fontawesome-webfont3e6e.1e59d2330b4c6deb84b3.ttf",
     "static/media/logo_gcet.png": "/static/media/logo_gcet.c06ffc2791bfc8bccb98.png",
     "static/media/gcet_5.jpg": "/static/media/gcet_5.362dff395e5be9d6da97.jpg",
+    "static/media/student_council.jpeg": "/static/media/student_council.7ae31e5c94bda402fe2c.jpeg",
     "static/media/icomoonbd7d.eot?hc836c": "/static/media/icomoonbd7d.c35ce0f99ad6127e9a57.eot",
     "static/media/icomoonbd7d.woff?hc836c": "/static/media/icomoonbd7d.97a0fbfe1946240bc765.woff",
     "static/media/icomoonbd7d.ttf?hc836c": "/static/media/icomoonbd7d.1723687f60e6655d9681.ttf",
@@ -46,12 +47,12 @@
     "static/media/glyphicons-halflings-regular.woff2": "/static/media/glyphicons-halflings-regular.be810be3a3e14c682a25.woff2",
     "static/media/bodybg-01.png": "/static/media/bodybg-01.b6569350f87633aa99db.png",
     "index.html": "/index.html",
-    "main.90224cf4.css.map": "/static/css/main.90224cf4.css.map",
-    "main.70d8dc32.js.map": "/static/js/main.70d8dc32.js.map",
+    "main.5dd88c54.css.map": "/static/css/main.5dd88c54.css.map",
+    "main.db011c2c.js.map": "/static/js/main.db011c2c.js.map",
     "787.61553875.chunk.js.map": "/static/js/787.61553875.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.90224cf4.css",
-    "static/js/main.70d8dc32.js"
+    "static/css/main.5dd88c54.css",
+    "static/js/main.db011c2c.js"
   ]
 }

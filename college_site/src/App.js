@@ -42,6 +42,14 @@ import Startup_cell from './subchild/startup';
 import NSS from './subchild/nss';
 import Tp_cell from './subchild/t_p';
 
+import tp_contact from "./subchild/tp_contact";
+import tp_intro from "./subchild/tp_intro";
+import tp_invitation from "./subchild/tp_invitation";
+import tp_message from "./subchild/tp_message";
+import tp_notice from "./subchild/tp_notice";
+import tp_placement from "./subchild/tp_placement";
+import tp_recruiters from "./subchild/tp_recruiters";
+
 import Login from "./Login";
 import Register from "./Register";
 import Reset from "./Reset";
@@ -97,6 +105,18 @@ function App() {
                 <Route path='/electricl_department' element = {<Elec_dep/>} />
                 <Route path='/e_c_department' element = {<E_C_dep/>} />
                 <Route path='/mechanical_department' element = {<Mech_dep/>} />
+                
+                <Route path='/tp_contact' element = {<tp_contact/>} />
+                <Route path='/tp_intro' element = {<tp_intro/>} />
+                <Route path='/tp_invitation' element = {<tp_invitation/>} />
+                <Route path='/tp_message' element = {<tp_message/>} />
+                <Route path='/tp_notice' element = {<tp_notice/>} />
+                <Route path='/tp_placement' element = {<tp_placement/>} />
+                <Route path='/tp_recruiters' element = {<tp_recruiters/>} />
+              
+             
+                         
+                            
                 <Route path='/login' element={<Login />} />
                 <Route exact path="/register" element={<Register />} />
                 <Route exact path="/reset" element={<Reset />} />

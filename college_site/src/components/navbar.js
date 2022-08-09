@@ -98,6 +98,19 @@ const Navbar = () => {
 												<li><a class='dropdown-item' href={noc}>STUDENT NOC FORM</a></li>
 											</ul>
 										</li>
+										<li class="nav-item dropdown">
+											<a class='nav-link dropdown-toggle' data-toggle='dropdown' aria-expanded="false" id="navbarDropdownMenuLinkClb" href="javascript:void(0);">T&P</a>
+											<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkClb">
+												<li><a class='dropdown-item' href="/tp_intro">Introduction</a></li>
+												<li><a class='dropdown-item' href="/tp_message">Message</a></li>
+												<li><a class='dropdown-item' href="/tp_invitation">Invitation</a></li>
+												<li><a class='dropdown-item' href="/tp_recruiters">Our Recruiters</a></li>
+												<li><a class='dropdown-item' href="/tp_placement">Placement List</a></li>
+												<li><a class='dropdown-item' href="/tp_notice">Notice Board</a></li>
+												<li><a class='dropdown-item' href="/tp_contact">Contact</a></li>
+											
+											</ul>
+										</li>
 										<li className='nav-item'><a className='nav-link' href="/administration">Administration</a></li>
 										<li className='nav-item'>
 											<a className='nav-link' href="/about_us">About Us</a>
@@ -107,6 +120,7 @@ const Navbar = () => {
 											<a className='nav-link' href="/log_in">Log In</a>
 
 										</li>
+
 
 
 									</ul>

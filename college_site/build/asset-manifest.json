@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.5dd88c54.css",
-    "main.js": "/static/js/main.db011c2c.js",
+    "main.css": "/static/css/main.54b4883b.css",
+    "main.js": "/static/js/main.cf5bdd88.js",
     "static/js/787.61553875.chunk.js": "/static/js/787.61553875.chunk.js",
     "static/media/Garden.jpg": "/static/media/Garden.a5b69278a5d1e8316e1e.jpg",
     "static/media/Mechanical1.jpg": "/static/media/Mechanical1.e26cea9e9d0287946213.jpg",
@@ -32,7 +32,6 @@
     "static/media/nsslogo.png": "/static/media/nsslogo.3677192c6a10c4f6d522.png",
     "static/media/fontawesome-webfont3e6e.woff2?v=4.7.0": "/static/media/fontawesome-webfont3e6e.20fd1704ea223900efa9.woff2",
     "static/media/mech_iq.jpeg": "/static/media/mech_iq.92e601e15426019c38c7.jpeg",
-    "static/media/GCET_Jammu1.jpg": "/static/media/GCET_Jammu1.2ed7135183e4196fae22.jpg",
     "static/media/civil_dep.jpg": "/static/media/civil_dep.032d69190c823636a866.jpg",
     "static/media/khidmat.jpg": "/static/media/khidmat.feb703228cb90a9abd65.jpg",
     "static/media/glyphicons-halflings-regular.ttf": "/static/media/glyphicons-halflings-regular.4692b9ec53fd5972caa2.ttf",
@@ -43,16 +42,15 @@
     "static/media/glyphicons-halflings-regular.woff": "/static/media/glyphicons-halflings-regular.82b1212e45a2bc35dd73.woff",
     "static/media/glyphicons-halflings-regular.eot": "/static/media/glyphicons-halflings-regular.5be1347c682810f199c7.eot",
     "static/media/glyphicons-halflings-regulard41d.eot": "/static/media/glyphicons-halflings-regulard41d.5be1347c682810f199c7.eot",
-    "static/media/img-02.jpg": "/static/media/img-02.915ef9274e235f43f691.jpg",
     "static/media/glyphicons-halflings-regular.woff2": "/static/media/glyphicons-halflings-regular.be810be3a3e14c682a25.woff2",
     "static/media/bodybg-01.png": "/static/media/bodybg-01.b6569350f87633aa99db.png",
     "index.html": "/index.html",
-    "main.5dd88c54.css.map": "/static/css/main.5dd88c54.css.map",
-    "main.db011c2c.js.map": "/static/js/main.db011c2c.js.map",
+    "main.54b4883b.css.map": "/static/css/main.54b4883b.css.map",
+    "main.cf5bdd88.js.map": "/static/js/main.cf5bdd88.js.map",
     "787.61553875.chunk.js.map": "/static/js/787.61553875.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5dd88c54.css",
-    "static/js/main.db011c2c.js"
+    "static/css/main.54b4883b.css",
+    "static/js/main.cf5bdd88.js"
   ]
 }

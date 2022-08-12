@@ -41,6 +41,7 @@ import Mech_dep from './subchild/mechanical_dep';
 import Startup_cell from './subchild/startup';
 import NSS from './subchild/nss';
 import Tp_cell from './subchild/t_p';
+import Noti from './notificationPage';
 
 import tp_contact from "./subchild/tp_contact";
 import tp_intro from "./subchild/tp_intro";
@@ -114,7 +115,7 @@ function App() {
                 <Route path='/tp_placement' element = {<tp_placement/>} />
                 <Route path='/tp_recruiters' element = {<tp_recruiters/>} />
               
-             
+                <Route path='/Notifications' element = {<Noti/>}/>
                          
                             
                 <Route path='/login' element={<Login />} />

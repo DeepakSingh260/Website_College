@@ -1,6 +1,8 @@
 import React ,{ useState,useEffect } from "react";
 import app from '../firebase'
 import { getDatabase, onValue, ref, set } from "firebase/database";
+import Noti from "../notificationPage";
+import { Link } from "react-router-dom";
 
 const Noticeboard = () =>{
 	const db = getDatabase(app)
@@ -15,7 +17,7 @@ const Noticeboard = () =>{
                 
                 const data = childSnapshot.val().Title;
 				console.log(data)
-                fetchedTasks.push(data);
+                fetchedTasks.push(childSnapshot.val());
             });
             setTasks(fetchedTasks);
         });
@@ -35,7 +37,10 @@ const Noticeboard = () =>{
 											{tasks.map(
 												(task)=>(
 												<li class='list-group-item'>
-												<a href="javascript:void(0);">{task}</a>
+											
+												<Link to = {{pathname:'/Notifications',
+												}} state={task}>{task.Title}</Link>
+
 											</li>
 												)
 											)}

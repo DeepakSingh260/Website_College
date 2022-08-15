@@ -52,7 +52,6 @@ const Home = () => {
   return (
     <div className='container'>
       <div className='Home'>
-        
           <TextAnim />
         <div className='row justify-content-center align-items-start'>
           <div className='col-lg-8 col-sm-12' >

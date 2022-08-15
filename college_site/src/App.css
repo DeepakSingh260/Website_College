@@ -131,11 +131,56 @@ body{
 
 .navbar-nav .nav-item .nav-link {
   padding: 1em!important;
+  font-weight: bold;
+  transition: all 0s ease!important;
+}
+
+.navbar-nav .nav-item.dropdown.open  .nav-link{
+  color: white!important;
 }
 
 .navbar-nav .nav-item:hover .nav-link{
   color: white!important;
+  background-color: brown;
 }
+
+.in .navbar-nav .nav-item.dropdown.open .dropdown-item{
+  color: white!important;
+  transition: all 0.5s !important;
+
+  /* font-style: italic; */
+}
+
+.in .navbar-nav .nav-item .dropdown-item{
+  margin: 2px;
+
+  /* font-style: italic; */
+}
+
+
+.in .navbar-nav .nav-item .dropdown-item:hover{
+  color: white!important;
+  transform: scale(1.1);
+
+  
+}
+
+
+.in .navbar-nav .nav-item li > .dropdown-item:hover{
+  /* border: 0.5px solid white; */
+
+  
+}
+
+
+
+
+
+
+.navbar-nav .nav-item.dropdown.open {
+  background-color: brown!important;
+}
+
 
 
 button.navbar-toggler{

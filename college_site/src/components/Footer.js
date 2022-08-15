@@ -73,6 +73,18 @@ const Footer =()=>{
         <a className='text-reset fw-bold' href='https://www.gcetjammu.org.in'>
           GCET Jammu
         </a>
+        <br/>
+        Developed By: &nbsp; &nbsp; &nbsp; &nbsp;
+        <a className='text-reset fw-bold' href='https://github.com/ayush391'>
+        Ayush Kapoor &nbsp; &nbsp; &nbsp; &nbsp;
+        </a>
+
+        <a className='text-reset fw-bold' href='https://www.linkedin.com/in/deepak-singh25'>
+        Deepak Singh
+        </a>&nbsp; &nbsp; &nbsp; &nbsp;
+        <a className='text-reset fw-bold' href='https://github.com/sxsmg'>
+          Sakshum Gadyal
+        </a>
       </div>
     </MDBFooter>
         </div>

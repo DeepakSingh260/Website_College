@@ -43,7 +43,7 @@ import NSS from './subchild/nss';
 import Tp_cell from './subchild/t_p';
 import Noti from './notificationPage';
 
-import tp_contact from "./subchild/tp_contact";
+import Tp_contact from "./subchild/tp_contact";
 import tp_intro from "./subchild/tp_intro";
 import tp_invitation from "./subchild/tp_invitation";
 import tp_message from "./subchild/tp_message";
@@ -56,6 +56,11 @@ import Register from "./Register";
 import Reset from "./Reset";
 import Dashboard from "./Dashboard";
 import Council from './subchild/student_council';
+import Tp_intro from './subchild/tp_intro';
+import Tp_message from './subchild/tp_message';
+import Tp_invitation from './subchild/tp_invitation';
+import Tp_recruiters from './subchild/tp_recruiters';
+import Tp_notice from './subchild/tp_notice';
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -107,13 +112,13 @@ function App() {
                 <Route path='/e_c_department' element = {<E_C_dep/>} />
                 <Route path='/mechanical_department' element = {<Mech_dep/>} />
                 
-                <Route path='/tp_contact' element = {<tp_contact/>} />
-                <Route path='/tp_intro' element = {<tp_intro/>} />
-                <Route path='/tp_invitation' element = {<tp_invitation/>} />
-                <Route path='/tp_message' element = {<tp_message/>} />
-                <Route path='/tp_notice' element = {<tp_notice/>} />
+                <Route path='/tp_contact' element = {<Tp_contact/>} />
+                <Route path='/tp_intro' element = {<Tp_intro/>} />
+                <Route path='/tp_invitation' element = {<Tp_invitation/>} />
+                <Route path='/tp_message' element = {<Tp_message/>} />
+                <Route path='/tp_notice' element = {<Tp_notice/>} />
                 <Route path='/tp_placement' element = {<tp_placement/>} />
-                <Route path='/tp_recruiters' element = {<tp_recruiters/>} />
+                <Route path='/tp_recruiters' element = {<Tp_recruiters/>} />
               
                 <Route path='/Notifications' element = {<Noti/>}/>
                          

@@ -14,7 +14,7 @@ const Tp_intro = () =>{
       <>
 
       </>
-      <div className="Introduction">
+      <div className="container Introduction">
  
         <h1>Introduction</h1>
         <p>The goal of Training & Placement Cell is to Provide employment opportunities and world class training to GCET Students in Leading Orgainizations.
@@ -26,7 +26,6 @@ const Tp_intro = () =>{
        The students act as a channel of communication with industries.</p>
     <h2>Placements</h2>
 
-      </div>
       <p> All the reputed organizations including MNCs come to the College for campus recruitment.
          To achieve its goal, the Training & Placement Cell works towards recognizing the core competencies of students.
           It works through a close knot organization and has a structure which conveys information to the students 
@@ -37,6 +36,7 @@ const Tp_intro = () =>{
            It also takes suggestions from members of industry regarding designing/changing of curriculum.
 
 </p>
+      </div>
 	    </div>
 		
     

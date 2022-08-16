@@ -14,7 +14,7 @@ const tp_placements = () =>{
       <>
 
       </>
-      <div className="Introduction">
+      <div className="container Introduction">
  
         <h1>T&P Placements</h1>
         

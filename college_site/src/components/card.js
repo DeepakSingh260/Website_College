@@ -52,7 +52,7 @@ class Card extends React.Component {
     }
     render() {
         return (
-            <div class="card-element card bg-dark text-white ">
+            <div class="card-element text-center card bg-dark text-white ">
                 <a id= {this.props.id} href = {this.props.link} >
                     <div className='card-image'>
 

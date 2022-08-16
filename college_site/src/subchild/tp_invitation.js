@@ -12,7 +12,7 @@ const Tp_invitation = () =>{
       <>
 
       </>
-      <div className="Introduction" style={{marginLeft:"8%" }}>
+      <div className="container Introduction">
  
         <h2>Invitation</h2>
         <div style={{marginTop:"2%" , fontSize:"1.3em" }}>

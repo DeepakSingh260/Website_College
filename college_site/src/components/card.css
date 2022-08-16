@@ -1,7 +1,7 @@
 .card-element{
     transition: all .5s;
     border-radius: 5px;
-    border: 5px solid rgb(200, 42, 42);
+    /* border: 5px solid rgb(200, 42, 42); */
     max-height: 20vh;
 
 }
@@ -14,7 +14,7 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: rgba(0,0,0,.5);
+    background-color: rgba(0,0,0,.65);
     top: 0;
     left: 0;
     display: block;
@@ -46,3 +46,4 @@
 .card-element h4{
     transition: all .5s;
 }
+

@@ -3,11 +3,38 @@ import app from '../firebase'
 import { getDatabase, onValue, ref, set } from "firebase/database";
 import Noti from "../notificationPage";
 import { Link } from "react-router-dom";
+import { event } from "jquery";
+const db = getDatabase(app)
+const read = ref(db,'Notifications/');
 
 const Noticeboard = () =>{
-	const db = getDatabase(app)
-	const read = ref(db,'Notifications/');
+	
+	
 	const [tasks, setTasks] = useState([]);
+	const HandleKeyPress =(e)=>{
+		
+			let query = String(e.target.value)
+			query = query.toUpperCase()
+				if(e.key == 'Enter'){
+				
+				onValue(read, (snapshot) => {
+					const fetchedTasks = [];
+					snapshot.forEach(childSnapshot => {	
+						let data = String(childSnapshot.val().Title);
+						data = data.toUpperCase()
+						if(data.includes(query)){
+							console.log(data)
+							fetchedTasks.push(childSnapshot.val());
+						}
+					});
+					setTasks(fetchedTasks);
+				});
+			}
+				
+			
+	
+		
+	}
 
     useEffect(() => {
         
@@ -31,7 +58,7 @@ const Noticeboard = () =>{
 									</div>
 									<div class=" card-body tg-widgetcontent">
                                     <div class="input-group mb-3">
-                                        <input type="text" class="form-control" placeholder="Search Notification" aria-label="Search_Notification" aria-describedby="basic-addon1"/>
+                                        <input type="text" class="form-control" placeholder="Search Notification" aria-label="Search_Notification" aria-describedby="basic-addon1" onKeyDown={HandleKeyPress}/>
                                         </div>
 										<ul class='list-group list-group-flush'>
 											{tasks.map(

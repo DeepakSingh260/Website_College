@@ -55,13 +55,14 @@ const Footer =()=>{
               </p>
               <p>
                 <i className='fas fa-envelope me-3'></i>
-                gcet_jammu1994@rediffmail.com
+                <a href="mailto:gcet_jammu1994@rediffmail.com">gcet_jammu1994@rediffmail.com</a>
+                
               </p>
               <p>
-                <i className='fas fa-phone me-3'></i> 9419724322
-              </p>
+                <i className='fas fa-phone me-3'></i><a href="tel:9419724322">9419724322</a>
+              </p> 
               <p>
-                <i className='fas fa-print me-3'></i> 0191-2958077
+                <i className='fas fa-print me-3'></i><a href="tel:0191-2958077">0191-2958077</a>
               </p>
             </div>
           </div>

@@ -1,9 +1,11 @@
-import React, { Component ,useEffect,useState } from 'react';
+import React, { Component ,Fragment,useEffect,useState } from 'react';
 import Department_Image from '../Assets/civil_dep.jpg';
 import CLUB_LOGO from '../Assets/gcet_6.jpg';
 import './Home.css';
 import './home_message.css';
 import '../components/fade_in_text_anim.css'
+
+import './civil_dep.css'
 
 import Gallery from '../components/Gallery';
 import Noticeboard from '../components/noticeboard';
@@ -50,6 +52,7 @@ const Home = () => {
   },[]);
 
   return (
+    <Fragment>
     <div className='container'>
       <div className='Home'>
           <TextAnim />
@@ -64,7 +67,8 @@ const Home = () => {
         </div>
 
       </div>
-      <div className='container '>
+    </div>
+      <div className='container'>
         <div className='row justify-content-center cards'>
 
           <Card id='card_img_no_link' name='NSS' href={nss} link="nss"external='False'/>
@@ -77,7 +81,7 @@ const Home = () => {
           <Card id='card_img_no_link' name='Royal Mechnocrats' href={mech} external='False'/>
         </div>
       </div>
-    </div>
+    </Fragment>
   );
 }
 

@@ -31,6 +31,10 @@ body{
 }
 
 
+.footer{
+  background-color: white;
+}
+
 
 
 .App-header {
@@ -218,4 +222,12 @@ button.navbar-toggler{
   border-top: 0;
   border-bottom: 0.3em solid;
 }
+}
+
+
+.noborder div.card-element{
+  border: none!important;
+}
+.noborder div.card-element:hover{
+  border: grey!important;
 }

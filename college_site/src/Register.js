@@ -6,7 +6,7 @@ import {
   registerWithEmailAndPassword,
   signInWithGoogle,
 } from "./firebase";
-import "./Register.css";
+import "./Dashboard.css";
 
 function Register() {
   const [email, setEmail] = useState("");
@@ -26,8 +26,8 @@ function Register() {
   }, [user, loading]);
 
   return (
-    <div className="register">
-      <div className="register__container">
+    <div className="container parent-container">
+      <div className="login-container">
         <input
           type="text"
           className="register__textBox"
@@ -40,7 +40,7 @@ function Register() {
           className="register__textBox"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          placeholder="E-mail Address"
+          placeholder="E-mail"
         />
         <input
           type="password"
@@ -49,18 +49,18 @@ function Register() {
           onChange={(e) => setPassword(e.target.value)}
           placeholder="Password"
         />
-        <button className="register__btn" onClick={register}>
+        <button className="btn btn-secondary" onClick={register}>
           Register
         </button>
         <button
-          className="register__btn register__google"
+          className="btn btn-danger"
           onClick={signInWithGoogle}
         >
           Register with Google
         </button>
 
-        <div>
-          Already have an account? <Link to="/">Login</Link> now.
+        <div className="mt-4">
+          Already have an account? <br></br><Link to="/">Login</Link> now.
         </div>
       </div>
     </div>

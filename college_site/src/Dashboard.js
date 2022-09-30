@@ -7,6 +7,8 @@ import { getDatabase, onValue, push, ref, set } from "firebase/database";
 import { query, collection, getDocs, where } from "firebase/firestore";
 
 import { getDownloadURL, getStorage, ref as refer, uploadBytes, uploadBytesResumable } from "firebase/storage";
+
+import Notifications from "./components/list_notifications";
 import { nodeName } from "jquery";
 
 const storage = getStorage(app);
@@ -141,6 +143,17 @@ function Dashboard() {
         </button>
 
       </div>
+      <div className="create-notification-container">
+        <h2 className="heading">Previous Notifications</h2>
+        <Notifications></Notifications>
+
+        {/* <input className="file_input" type="file" ref={fileInput} onChange={fileChanged} />
+        <button onClick={selectFile} className='btn btn-danger' >
+
+          <span>Upload</span>
+        </button> */}
+
+      </div>
 
       <div className="dashboard">
         <div className="dashboard__container">
@@ -154,6 +167,7 @@ function Dashboard() {
           </button>
         </div>
       </div>
+
     </div >
   );
 }

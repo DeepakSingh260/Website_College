@@ -135,3 +135,35 @@
     padding:0rem 1.2rem;
     background-color: grey;
   }
+
+  ul{
+
+    list-style: none!important;
+
+  }
+
+  .list-group-item{
+    display: flex;
+    align-items: center;
+  }
+
+  .list-group-item{
+    background-color: white;
+    font-size: 1.5rem;
+    /* border-radius: 20px; */
+  }
+
+  .list-group-item:hover{
+    background-color: rgba(165, 42, 42, 0.1);
+  }
+
+  .list-group-item .btn{
+    display: inline-block;
+    margin: 0 1rem;
+  }
+
+  .dashboard-card-body{
+    overflow: scroll;
+    margin-top: 2rem;
+    max-height:50rem;
+  }

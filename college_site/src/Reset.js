@@ -3,7 +3,7 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { auth, sendPasswordReset } from "./firebase";
-import "./Reset.css";
+import "./Dashboard.css";
 
 function Reset() {
   const [email, setEmail] = useState("");
@@ -16,20 +16,20 @@ function Reset() {
   }, [user, loading]);
 
   return (
-    <div className="reset">
-      <div className="reset__container">
+    <div className="container parent-container">
+      <div className="login-container">
         <input
           type="text"
           className="reset__textBox"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          placeholder="E-mail Address"
+          placeholder="E-mail"
         />
-        <button className="reset__btn" onClick={() => sendPasswordReset(email)}>
-          Send password reset email
+        <button className="btn btn-danger" onClick={() => sendPasswordReset(email)}>
+          Reset Password
         </button>
 
-        <div>
+        <div className="mt-5">
           Don't have an account? <Link to="/register">Register</Link> now.
         </div>
       </div>

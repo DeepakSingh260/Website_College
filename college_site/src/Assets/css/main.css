@@ -305,7 +305,7 @@ address { font-style: italic; }
 ==============================================*/
 .tg-haslayout{
 	width:100%;
-	float:left;
+	/* float:left; */
 }
 .tg-sectionspace{padding: 20px 0;}
 .tg-locationmap{

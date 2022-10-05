@@ -112,8 +112,8 @@ function Dashboard() {
 
             <div className="col-lg-5 col-md-12">
 
-              <input type="text" placeholder="Title" onChange={handleInput} name="Update" />
-              <textarea cols='40' rows='50' type="text" placeholder="Body" onChange={handleBody} name="Update" />
+              <input className="input_" type="text" placeholder="Title" onChange={handleInput} name="Update" />
+              <textarea className="textarea_" cols='40' rows='50' type="text" placeholder="Body" onChange={handleBody} name="Update" />
             </div>
             <div className="col-lg-5 col-md-12">
 

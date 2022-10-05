@@ -61,7 +61,7 @@ import Tp_message from './subchild/tp_message';
 import Tp_invitation from './subchild/tp_invitation';
 import Tp_recruiters from './subchild/tp_recruiters';
 import Tp_notice from './subchild/tp_notice';
-
+import Contri from './subchild/contributer'
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -134,6 +134,7 @@ function App() {
                 <Route exact path="/dashboard" element={<Dashboard />} />
                 <Route exact path="/student_council" element={<Council />} />
                 <Route exact path="/log_in" element={<Login />} />
+                <Route exact path="/Contributors" element={<Contri/>} />
               </Routes>
 
               <Footer />

@@ -122,10 +122,15 @@ const Navbar = () => {
 											</ul>
 										</li>
 										<li className='nav-item'><a className='nav-link' href="/administration">Administration</a></li>
-										<li className='nav-item'>
-											<a className='nav-link' href="/about_us">About Us</a>
-
+										<li class="nav-item dropdown">
+											<a class='nav-link dropdown-toggle' data-toggle='dropdown' aria-expanded="false" id="navbarDropdownMenuLinkClb" href="javascript:void(0);">About Us</a>
+											<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkClb">
+												<li><a class='dropdown-item' href="/about_us">About College</a></li>
+												<li><a class='dropdown-item' href="/Contributors">Contributors</a></li>
+												
+											</ul>
 										</li>
+										
 										<li className='nav-item'>
 											<a className='nav-link' href="/log_in">Log In</a>
 

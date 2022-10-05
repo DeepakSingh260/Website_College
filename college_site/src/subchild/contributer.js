@@ -1,18 +1,20 @@
-import { onValue, ref,getDatabase } from "firebase/database";
+import { onValue, ref, getDatabase } from "firebase/database";
 import React, { useEffect, useState } from "react";
+
+import './contributer.css'
 
 import app from "../firebase";
 const db = getDatabase(app)
-const read = ref(db ,"Contributors/")
+const read = ref(db, "Contributors/")
 
-const Contri = ()=>{
+const Contri = () => {
 
-    const [tasks , setTasks] = useState([])
+    const [tasks, setTasks] = useState([])
 
-    useEffect(()=>{
+    useEffect(() => {
         let fetchedTasks = []
-        onValue(read , (snapshot)=>{
-            snapshot.forEach((childSnapshot)=>{
+        onValue(read, (snapshot) => {
+            snapshot.forEach((childSnapshot) => {
                 const data = childSnapshot.val()
                 fetchedTasks.push(data)
 
@@ -22,22 +24,27 @@ const Contri = ()=>{
         })
 
 
-    },[])
-    return(
+    }, [])
+    return (
         <div>
-            <h1>Contributers Page</h1>
-            <ul class='list-group list-group-flush'>
-            {
-            tasks.map((task) => (
-                
-                <li class='list-group-item'>
-                <h1>{task.Name}</h1>
-                <h3>{task.Contributions}</h3>
-                <img src={task.Link} alt="img not available" style={{height:"100px"} }  />
-                </li>
-        )
-        )}
-        </ul>
+            <div className="container">
+
+                <h1 className="heading">Contributers</h1>
+                <ul>
+                    {
+                        tasks.map((task) => (
+
+                            <li class='contributer'>
+                                <img className="contributer-img" src={task.Link} alt="img not available" />
+                                <div className="name-img-container">
+                                    <h1 className="contributer-name">{task.Name}</h1>
+                                    <h3 className="contributer-desc">{task.Contributions}</h3>
+                                </div>
+                            </li>
+                        )
+                        )}
+                </ul>
+            </div>
         </div>
     )
 }

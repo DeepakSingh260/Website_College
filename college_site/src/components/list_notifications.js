@@ -4,6 +4,7 @@ import { getDatabase, onValue, ref, remove, set,DatabaseReference } from "fireba
 import Noti from "../notificationPage";
 import { Link } from "react-router-dom";
 import { event } from "jquery";
+// import '../Dashboard.css'
 const db = getDatabase(app)
 const read = ref(db, 'Notifications/');
 
@@ -85,7 +86,7 @@ const Notifications = () => {
     return (
         <div class="" >
             <div class="">
-                <input type="text" class="form-control" placeholder="Search Notification" aria-label="Search_Notification" aria-describedby="basic-addon1" onKeyDown={HandleKeyPress} />
+                <input className='input_' type="text" class="form-control" placeholder="Search Notification" aria-label="Search_Notification" aria-describedby="basic-addon1" onKeyDown={HandleKeyPress} />
                 <div class="dashboard-card-body">
                     <ul class='list-group list-group-flush'>
                         {tasks.map(

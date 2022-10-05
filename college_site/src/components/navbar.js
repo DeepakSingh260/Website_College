@@ -34,6 +34,16 @@ const Navbar = () => {
 			setNoc(value)
 		})
 	})
+
+	const [tp_list ,set_list] = useState("/")
+
+	const tp_ref = refer(storage , "placement_list.pdf")
+
+	useEffect(()=>{
+		getDownloadURL(tp_ref).then((value)=>{
+			set_list(value)
+		})
+	})
 	return (
 
 		<header id="tg-header" class="tg-header tg-haslayout">
@@ -105,7 +115,7 @@ const Navbar = () => {
 												<li><a class='dropdown-item' href="/tp_message">Message</a></li>
 												<li><a class='dropdown-item' href="/tp_invitation">Invitation</a></li>
 												<li><a class='dropdown-item' href="/tp_recruiters">Our Recruiters</a></li>
-												<li><a class='dropdown-item' href="/tp_placement">Placement List</a></li>
+												<li><a class='dropdown-item' href={tp_list}>Placement List</a></li>
 												<li><a class='dropdown-item' href="/tp_notice">Notice Board</a></li>
 												<li><a class='dropdown-item' href="/tp_contact">Contact</a></li>
 											

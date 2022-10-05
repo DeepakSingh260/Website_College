@@ -9,7 +9,7 @@ import { query, collection, getDocs, where } from "firebase/firestore";
 import { getDownloadURL, getStorage, ref as refer, uploadBytes, uploadBytesResumable } from "firebase/storage";
 
 import Notifications from "./components/list_notifications";
-import { nodeName } from "jquery";
+import { get, nodeName } from "jquery";
 
 const storage = getStorage(app);
 
@@ -17,7 +17,11 @@ const storage = getStorage(app);
 function update(event, text, bod, lk) {
   event.preventDefault()
   const database = getDatabase(app)
-  const reference = ref(database, "Notifications/")
+  
+  const date = new Date()
+  const current_date = date.getDate().toString()+"-"+(date.getMonth()+1).toString()+"-"+date.getFullYear().toString()
+  console.log("Date Today"+current_date)
+  const reference = ref(database, "Notifications/"+current_date)
   const new_update = {
     Title: String(text),
     Body: String(bod),

@@ -9,17 +9,41 @@ const read = ref(db, 'Notifications/');
 
 const Noticeboard = () => {
 
+	let date  = new Date()
+
+
+	// const comp_date = new Date("09/01/2022")
+	// console.log("comp date"+ comp_date)
+	// while (date>comp_date){ 
+	// 	console.log("Date:"+date.getDate() +"-" + (date.getMonth()+1)+"-" + date.getFullYear());
+	// 	date.setDate(date.getDate()-1)
+	
+	// }
+
 
 	const [tasks, setTasks] = useState([]);
 	const HandleKeyPress = (e) => {
 
 		let query = String(e.target.value)
 		query = query.toUpperCase()
+		
 		if (e.key == 'Enter') {
 
-			onValue(read, (snapshot) => {
-				const fetchedTasks = [];
+		const fetchedTasks = [];
+		let date  = new Date()
+		const comp_date = new Date("09/01/2020")
+		console.log("comp date"+ comp_date)
+
+			while (date>comp_date){ 
+				var current_date = date.getDate().toString() +"-" + (date.getMonth()+1).toString()+"-" + date.getFullYear().toString()
+				var refer = ref(db, 'Notifications/'+current_date)
+				date.setDate(date.getDate()-1)
+				console.log("Current Date "+current_date)
+
+			onValue(refer, (snapshot) => {
+				
 				snapshot.forEach(childSnapshot => {
+					
 					let data = String(childSnapshot.val().Title);
 					data = data.toUpperCase()
 					if (data.includes(query)) {
@@ -29,25 +53,39 @@ const Noticeboard = () => {
 				});
 				setTasks(fetchedTasks);
 			});
+			}
 		}
-
-
 
 
 	}
 
 	useEffect(() => {
 
-		const listener = onValue(read, (snapshot) => {
-			const fetchedTasks = [];
+		const fetchedTasks = [];
+		let date  = new Date()
+		const comp_date = new Date("09/01/2020")
+		console.log("comp date"+ comp_date)
+		
+		
+		while (date>comp_date){ 
+		var current_date = date.getDate().toString() +"-" + (date.getMonth()+1).toString()+"-" + date.getFullYear().toString()
+		var refer = ref(db, 'Notifications/'+current_date)
+		date.setDate(date.getDate()-1)
+		console.log("Current Date "+current_date)
+		const listener = onValue(refer, (snapshot) => {
+			
 			snapshot.forEach(childSnapshot => {
+				
 
-				const data = childSnapshot.val().Title;
-				console.log(data)
+				const data = childSnapshot.val();
+				console.log("Data",data)
 				fetchedTasks.push(childSnapshot.val());
 			});
 			setTasks(fetchedTasks);
+			
 		});
+
+	}
 
 	}, []);
 

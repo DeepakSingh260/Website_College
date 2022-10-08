@@ -72,7 +72,7 @@ const Notifications = () => {
 
                 const data = childSnapshot.val().Title;
                 
-                // console.log("console log data "+data)
+                console.log("console log data "+data)
                 fetchedTasks.push([data,childSnapshot.ref]);
             });
             // console.log("Feteched Task" , fetchedTasks[0][1])

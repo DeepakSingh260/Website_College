@@ -15,25 +15,25 @@ const storage = getStorage(app);
 
 
 function makeid(length) {
-    var result           = '';
-    var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-    var charactersLength = characters.length;
-    for ( var i = 0; i < length; i++ ) {
-      result += characters.charAt(Math.floor(Math.random() * 
- charactersLength));
-   }
-   return result;
+  var result = '';
+  var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  var charactersLength = characters.length;
+  for (var i = 0; i < length; i++) {
+    result += characters.charAt(Math.floor(Math.random() *
+      charactersLength));
+  }
+  return result;
 }
 
 
 function update(event, text, bod, lk) {
   event.preventDefault()
   const database = getDatabase(app)
-  
+
   const date = new Date()
-  const current_date = date.getDate().toString()+"-"+(date.getMonth()+1).toString()+"-"+date.getFullYear().toString()
-  console.log("Date Today"+current_date)
-  const reference = ref(database, "Notifications/"+current_date)
+  const current_date = date.getDate().toString() + "-" + (date.getMonth() + 1).toString() + "-" + date.getFullYear().toString()
+  console.log("Date Today" + current_date)
+  const reference = ref(database, "Notifications/" + current_date)
   const new_update = {
     Title: String(text),
     Body: String(bod),
@@ -44,19 +44,19 @@ function update(event, text, bod, lk) {
     alert("pushed")
   })
 }
-  function postContri(event , name , contri , lk){
-    event.preventDefault()
-    const database = getDatabase(app)
-    const reference = ref(database , "Contributors/")
-    const new_contri = {
-      Name:String(name),
-      Contributions :String(contri),
-      Link : String(lk)
-    }
-    push(reference , new_contri).then((val)=>{
-      alert("posted")
-    })
+function postContri(event, name, contri, lk) {
+  event.preventDefault()
+  const database = getDatabase(app)
+  const reference = ref(database, "Contributors/")
+  const new_contri = {
+    Name: String(name),
+    Contributions: String(contri),
+    Link: String(lk)
   }
+  push(reference, new_contri).then((val) => {
+    alert("posted")
+  })
+}
 
 
 
@@ -74,11 +74,11 @@ function Dashboard() {
     selectedFile: null
   };
 
-  let contri ={
+  let contri = {
     Name: "",
-    Contribution : "",
-    Img : null,
-    ImgLink :""
+    Contribution: "",
+    Img: null,
+    ImgLink: ""
   }
   const handleInput = event => {
     state.title = event.target.value
@@ -99,7 +99,7 @@ function Dashboard() {
     console.log(state.pdf.name)
   }
 
-  const handleIMG = event =>{
+  const handleIMG = event => {
     contri.Img = event.target.files[0]
   }
 
@@ -136,7 +136,7 @@ function Dashboard() {
   }
   const updateFile = (e) => {
     e.preventDefault()
-    const storageRef = refer(storage, makeid(32)+".pdf");
+    const storageRef = refer(storage, makeid(32) + ".pdf");
     uploadBytes(storageRef, state.pdf).then((snapshot) => {
       getDownloadURL(storageRef).then((val) => {
         state.pdfLink = val
@@ -150,9 +150,9 @@ function Dashboard() {
     e.preventDefault()
     const newStr = makeid(32)
     let extension = contri.Img.name.split(".")
-    console.log("extension"+extension[-1])
-    console.log("random String"+newStr+"."+extension[extension.length-1])
-    const storageRef = refer(storage, newStr+"."+String(extension[extension.length-1]));
+    console.log("extension" + extension[-1])
+    console.log("random String" + newStr + "." + extension[extension.length - 1])
+    const storageRef = refer(storage, newStr + "." + String(extension[extension.length - 1]));
     // const storageRef = refer(storage, String(contri.Img.name));
     uploadBytesResumable(storageRef, contri.Img).then((snapshot) => {
       getDownloadURL(storageRef).then((val) => {
@@ -166,7 +166,7 @@ function Dashboard() {
 
   }
 
- 
+
   return (
     <div className="container">
       <div className="create-notification-container">
@@ -193,7 +193,8 @@ function Dashboard() {
           <div className="row">
             <div className="col-lg-12 ">
 
-              <button onClick={(e) => {console.log(state)
+              <button onClick={(e) => {
+                console.log(state)
                 update(e, state.title, state.body, state.pdfLink);
               }} className="btn btn-danger">Push Notification</button>
             </div>
@@ -224,19 +225,6 @@ function Dashboard() {
 
       </div>
 
-      <div className="dashboard">
-        <div className="dashboard__container">
-          <h2 className="user_">
-            <span className="fa fa-user"></span>
-          </h2>
-          <h3 >{name}</h3>
-          <h5 className="label_">{user?.email}</h5>
-          <button className="btn btn-secondary" onClick={logout}>
-            Logout
-          </button>
-        </div>
-      </div>
-
       <div className="create-notification-container">
 
         <h2 className="heading">Add Contributors</h2>
@@ -261,7 +249,8 @@ function Dashboard() {
           <div className="row">
             <div className="col-lg-12 ">
 
-              <button onClick={(e) => {console.log(contri)
+              <button onClick={(e) => {
+                console.log(contri)
                 postContri(e, contri.Name, contri.Contribution, contri.ImgLink);
               }} className="btn btn-danger">Push Contribution</button>
             </div>
@@ -269,6 +258,22 @@ function Dashboard() {
 
         </form>
       </div>
+
+
+      <div className="dashboard">
+        <div className="dashboard__container">
+          <h2 className="user_">
+            <span className="fa fa-user"></span>
+          </h2>
+          <h3 >{name}</h3>
+          <h5 className="label_">{user?.email}</h5>
+          <button className="btn btn-secondary" onClick={logout}>
+            Logout
+          </button>
+        </div>
+      </div>
+
+
 
 
     </div >

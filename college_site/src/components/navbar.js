@@ -85,14 +85,15 @@ const Navbar = () => {
 											</ul>
 										</li>
 										<li className='nav-item'><a className='nav-link' href="https://www.coeju.com/">Results</a></li>
-										<li class="nav-item dropdown">
+										<li className='nav-item'><a className='nav-link' href="/admissions">Admissions</a></li>
+										{/* <li class="nav-item dropdown">
 											<a class='nav-link dropdown-toggle' data-toggle='dropdown' aria-expanded="false" id="navbarDropdownMenuLinkAdm" href="javascript:void(0);">Admissions</a>
 											<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkAdm">
 												<li><a class='dropdown-item' href="/admissions">Admissions</a></li>
 												<li><a class='dropdown-item' href="admissionsdetail.html">Admission Detail</a></li>
 											</ul>
 
-										</li>
+										</li> */}
 										<li class="nav-item dropdown">
 											<a class='nav-link dropdown-toggle' data-toggle='dropdown' aria-expanded="false" id="navbarDropdownMenuLinkClb" href="javascript:void(0);">Clubs & Council</a>
 											<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkClb">

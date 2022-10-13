@@ -20,6 +20,7 @@
     left: 0;
     display: block;
     content: "";
+    
 }
 
 .card-element:hover .card-image::after{
@@ -46,5 +47,7 @@
 
 .card-element h4{
     transition: all .5s;
+    text-shadow: 3px 3px #000000;
+    font-weight: 600;
 }
 

@@ -53,10 +53,10 @@ class Card extends React.Component {
     render() {
         return (
             <div class="card-element text-center card bg-dark text-white ">
-                <a id= {this.props.id} href = {this.props.link} >
+                <a id= {this.props.id} href = {this.props.link} target='_blank'>
                     <div className='card-image'>
 
-                        <img class="card-img" src={this.props.href} alt="Card image" />
+                        <img class="card-img" src={this.props.href}  alt="Card image" />
                     </div>
                     <div class="card-img-overlay d-flex justify-content-center">
                         <h4 class="card-overlay-text card-text text-white align-self-center ">{this.props.name}</h4>

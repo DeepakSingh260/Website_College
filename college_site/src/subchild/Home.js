@@ -32,11 +32,15 @@ import mech from '../Assets/card_imgs/mech.jpeg'
 import mech_iq from '../Assets/card_imgs/mech_iq.jpeg'
 import startup from '../Assets/card_imgs/startup.jpg'
 import red_ribbon from '../Assets/card_imgs/red_ribbon.jpeg'
+import ieee from '../Assets/IEEE.jpg'
+import nsp from '../Assets/NSP.jpg'
+import p_m from '../Assets/p_m_pic.jpg'
 import t_p from '../Assets/card_imgs/t&p.jpg'
 import road from '../Assets/card_imgs/road.jpg'
 
 import {ref as refer, getStorage, getDownloadURL} from "firebase/storage"
 import app from '../firebase';
+import Tp_intro from './tp_intro';
 
 
 const Home = () => {
@@ -73,12 +77,10 @@ const Home = () => {
 
           <Card id='card_img_no_link' name='NSS' href={nss} link="nss"external='False'/>
           <Card id='card_img_no_link' name='Startup Cell' href={startup} link="startup_cell"external='False'/>
-          <Card id='card_img_link' name='Training & Placement ' href={t_p} link={heading} external='True'/>
-          <Card id='card_img_no_link' name="Red Ribbon Club" href={red_ribbon} external='False'/>
-          <Card id='card_img_no_link' name='Khidmat Club' href={khidmat} external='False'/>
-          <Card id='card_img_no_link' name='Mechanical IQ Cell' href={mech_iq} external='False'/>
-          <Card id='card_img_no_link' name='Road Safety Club' href={road} external='False'/>
-          <Card id='card_img_no_link' name='Royal Mechnocrats' href={mech} external='False'/>
+          <Card id='card_img_link' name='Training & Placement ' href={t_p} link={Tp_intro} external='True'/>
+          <Card id='card_img_no_link' name="IEEE Digital" href={ieee} link="https://ieeexplore.ieee.org/Xplore/home.jsp" external='True'/>
+          <Card id='card_img_no_link' name='Scholarship Portal' href={nsp} link="https://scholarships.gov.in/" external='True'/>
+          <Card id='card_img_no_link' name='Principal Message' href={p_m} link="/principal_msg" external='False'/>
         </div>
       </div>
     </Fragment>

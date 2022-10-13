@@ -27,6 +27,7 @@ import "./Assets/css/responsive.css";
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import Admissions from './subchild/Admissions';
+import Admission_detail from './subchild/admissiondetails';
 
 import Footer from './components/Footer';
 
@@ -108,6 +109,7 @@ function App() {
                 <Route path="/administration" element={<Departments />} />
                 <Route path="*" element={<Academics />}/>
                 <Route path="/Admissions" element = {<Admissions/>} />
+                <Route path="/Admissions_detail" element = {<Admission_detail/>} />
                 <Route path="/civil_department" element = {<Civil_dep/>} />
                 <Route path='/computer_department' element = {<Comp_dep/>} />
                 <Route path='/electricl_department' element = {<Elec_dep/>} />

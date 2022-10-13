@@ -22,7 +22,7 @@ const Admissions = () =>{
            <h3>Documents Required</h3>
            <ul >
              <li>
-             <a href="#">
+             <a href="https://firebasestorage.googleapis.com/v0/b/college-website-52b15.appspot.com/o/Downloads%2Fdoc_require_admission.pdf?alt=media&token=8116827c-a0fe-474c-8fc7-48ba8f7e24c3">
                  Documents Required for Admission
                </a></li> 
              <li>
@@ -31,12 +31,12 @@ const Admissions = () =>{
                </a>
              </li>
              <li>
-               <a href="#">
+               <a href="https://firebasestorage.googleapis.com/v0/b/college-website-52b15.appspot.com/o/Downloads%2Fundertaking.pdf?alt=media&token=bceef685-6b30-4c65-b97b-fd8229aab65e">
                Undertaking from All Students
                </a>
              </li>
              <li>
-               <a href="#">
+               <a href="https://firebasestorage.googleapis.com/v0/b/college-website-52b15.appspot.com/o/Downloads%2Fundertaking2.pdf?alt=media&token=ff86e110-ad37-4634-b094-978bf78de1a7">
                Undertaking from Students who have passed 12th other than JKBOSE
                </a>
              </li>
@@ -100,11 +100,14 @@ const Admissions = () =>{
                      </li>
                      
                    </ul>
+
+                   
                  </div>
                
-           
-      
+              
     </div>
+
+
   );
 }
 export default Admissions;

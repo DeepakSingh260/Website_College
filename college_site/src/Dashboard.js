@@ -15,25 +15,25 @@ const storage = getStorage(app);
 
 
 function makeid(length) {
-    var result           = '';
-    var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-    var charactersLength = characters.length;
-    for ( var i = 0; i < length; i++ ) {
-      result += characters.charAt(Math.floor(Math.random() * 
- charactersLength));
-   }
-   return result;
+  var result = '';
+  var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  var charactersLength = characters.length;
+  for (var i = 0; i < length; i++) {
+    result += characters.charAt(Math.floor(Math.random() *
+      charactersLength));
+  }
+  return result;
 }
 
 
 function update(event, text, bod, lk) {
   event.preventDefault()
   const database = getDatabase(app)
-  
+
   const date = new Date()
-  const current_date = date.getDate().toString()+"-"+(date.getMonth()+1).toString()+"-"+date.getFullYear().toString()
-  console.log("Date Today"+current_date)
-  const reference = ref(database, "Notifications/"+current_date)
+  const current_date = date.getDate().toString() + "-" + (date.getMonth() + 1).toString() + "-" + date.getFullYear().toString()
+  console.log("Date Today" + current_date)
+  const reference = ref(database, "Notifications/" + current_date)
   const new_update = {
     Title: String(text),
     Body: String(bod),
@@ -44,19 +44,19 @@ function update(event, text, bod, lk) {
     alert("pushed")
   })
 }
-  function postContri(event , name , contri , lk){
-    event.preventDefault()
-    const database = getDatabase(app)
-    const reference = ref(database , "Contributors/")
-    const new_contri = {
-      Name:String(name),
-      Contributions :String(contri),
-      Link : String(lk)
-    }
-    push(reference , new_contri).then((val)=>{
-      alert("posted")
-    })
+function postContri(event, name, contri, lk) {
+  event.preventDefault()
+  const database = getDatabase(app)
+  const reference = ref(database, "Contributors/")
+  const new_contri = {
+    Name: String(name),
+    Contributions: String(contri),
+    Link: String(lk)
   }
+  push(reference, new_contri).then((val) => {
+    alert("posted")
+  })
+}
 
 
 
@@ -74,14 +74,47 @@ function Dashboard() {
     selectedFile: null
   };
 
-  let contri ={
+  let contri = {
     Name: "",
-    Contribution : "",
-    Img : null,
-    ImgLink :""
+    Contribution: "",
+    Img: null,
+    ImgLink: ""
   }
+
+  let syllabusfile = {
+    branch: "",
+    year: "",
+    pdf: null,
+    pdfLink: ""
+  }
+
+
+  const [selectedBranch, setSelectedBranch] = useState('COMPUTER');
+  const [selectedYear, setSelectedYear] = useState('1');
+  const [selectedFile, setSelectedFile] = useState('');
+
+  const handleBranchChange = event => {
+    console.log('Label 👉️', event.target.selectedOptions[0].label);
+    console.log(event.target.value);
+    setSelectedBranch(event.target.value);
+  };
+  const handleYearChange = event => {
+    console.log('Label 👉️', event.target.selectedOptions[0].label);
+    console.log(event.target.value);
+    setSelectedYear(event.target.value);
+  };
+
+
+
+
   const handleInput = event => {
     state.title = event.target.value
+  };
+  const syllabusbranchInput = event => {
+    syllabusfile.branch = event.target.value
+  };
+  const syllabusyearInput = event => {
+    syllabusfile.year = event.target.value
   };
   const handleBody = event => {
     state.body = event.target.value
@@ -98,8 +131,12 @@ function Dashboard() {
     state.pdf = event.target.files[0]
     console.log(state.pdf.name)
   }
+  const handleSyllabusPDF = event => {
+    setSelectedFile(event.target.files[0])
+    console.log(selectedFile.name)
+  }
 
-  const handleIMG = event =>{
+  const handleIMG = event => {
     contri.Img = event.target.files[0]
   }
 
@@ -136,7 +173,7 @@ function Dashboard() {
   }
   const updateFile = (e) => {
     e.preventDefault()
-    const storageRef = refer(storage, makeid(32)+".pdf");
+    const storageRef = refer(storage, makeid(32) + ".pdf");
     uploadBytes(storageRef, state.pdf).then((snapshot) => {
       getDownloadURL(storageRef).then((val) => {
         state.pdfLink = val
@@ -146,13 +183,25 @@ function Dashboard() {
     });
 
   }
+  const updateSyllabus = (e) => {
+    e.preventDefault()
+    const storageRef = refer(storage, 'syllabus_folder/' + selectedBranch + '/' + selectedBranch + "_" + selectedYear + ".pdf");
+    uploadBytes(storageRef, selectedFile).then((snapshot) => {
+      getDownloadURL(storageRef).then((val) => {
+        console.log("link gotten")
+        console.log(val)
+      })
+      console.log('Uploaded the syllabus pdf file!');
+    });
+
+  }
   const updateImg = (e) => {
     e.preventDefault()
     const newStr = makeid(32)
     let extension = contri.Img.name.split(".")
-    console.log("extension"+extension[-1])
-    console.log("random String"+newStr+"."+extension[extension.length-1])
-    const storageRef = refer(storage, newStr+"."+String(extension[extension.length-1]));
+    console.log("extension" + extension[-1])
+    console.log("random String" + newStr + "." + extension[extension.length - 1])
+    const storageRef = refer(storage, newStr + "." + String(extension[extension.length - 1]));
     // const storageRef = refer(storage, String(contri.Img.name));
     uploadBytesResumable(storageRef, contri.Img).then((snapshot) => {
       getDownloadURL(storageRef).then((val) => {
@@ -166,7 +215,7 @@ function Dashboard() {
 
   }
 
- 
+
   return (
     <div className="container">
       <div className="create-notification-container">
@@ -193,7 +242,8 @@ function Dashboard() {
           <div className="row">
             <div className="col-lg-12 ">
 
-              <button onClick={(e) => {console.log(state)
+              <button onClick={(e) => {
+                console.log(state)
                 update(e, state.title, state.body, state.pdfLink);
               }} className="btn btn-danger">Push Notification</button>
             </div>
@@ -224,18 +274,52 @@ function Dashboard() {
 
       </div>
 
-      <div className="dashboard">
-        <div className="dashboard__container">
-          <h2 className="user_">
-            <span className="fa fa-user"></span>
-          </h2>
-          <h3 >{name}</h3>
-          <h5 className="label_">{user?.email}</h5>
-          <button className="btn btn-secondary" onClick={logout}>
-            Logout
-          </button>
-        </div>
-      </div>
+      <div className="create-notification-container">
+
+        <h2 className="heading">Upload Syllabus</h2>
+        <form className="update_form">
+          <div className="row">
+
+            <div className="col-lg-5 col-md-12">
+
+              {/* <input className="input_" type="text" placeholder="Name" onChange={handleName} name="Update" /> */}
+              {/* <textarea className="textarea_" cols='40' rows='50' type="text" placeholder="Enter Contribution" onChange={handleContribution} name="Update" /> */}
+              <select class='list_box' onChange={handleBranchChange} name="branch-names" id="branch-names">
+                <option className="list_box_option" value="COMPUTER">Computer Engineering</option>
+                <option className="list_box_option" value="Mechanical">Mechanical Engineering</option>
+                <option className="list_box_option" value="Civil">Civil Engineering</option>
+                <option className="list_box_option" value="Electrical">Electrical Engineering</option>
+                <option className="list_box_option" value="E_C">Electronics and Communication Engineering</option>
+              </select>
+              <select class='list_box' onChange={handleYearChange} name="semester-names" id="semester-names">
+                <option className="list_box_option" value="1">1st year</option>
+                <option className="list_box_option" value="2">2nd Year</option>
+                <option className="list_box_option" value="3">3rd Year</option>
+                <option className="list_box_option" value="4">4th Year</option>
+              </select>
+            </div>
+            <div className="col-lg-5 col-md-12">
+
+              <h2 className="sub_heading">Upload Syllabus PDF</h2  >
+              <input className="file_input" type="file" ref={fileInput} onChange={handleSyllabusPDF} />
+              <button onClick={(e) => { updateSyllabus(e); }} className='btn btn-danger' >
+                <span className='ms-2' >Upload</span>
+              </button>
+            </div>
+          </div>
+
+          {/* <div className="row">
+            <div className="col-lg-12 ">
+
+              <button onClick={(e) => {
+                console.log(contri)
+                postContri(e, contri.Name, contri.Contribution, contri.ImgLink);
+              }} className="btn btn-danger">Submit</button>
+            </div>
+          </div> */}
+
+        </form>
+      </div >
 
       <div className="create-notification-container">
 
@@ -261,7 +345,8 @@ function Dashboard() {
           <div className="row">
             <div className="col-lg-12 ">
 
-              <button onClick={(e) => {console.log(contri)
+              <button onClick={(e) => {
+                console.log(contri)
                 postContri(e, contri.Name, contri.Contribution, contri.ImgLink);
               }} className="btn btn-danger">Push Contribution</button>
             </div>
@@ -269,6 +354,22 @@ function Dashboard() {
 
         </form>
       </div>
+
+
+      <div className="dashboard">
+        <div className="dashboard__container">
+          <h2 className="user_">
+            <span className="fa fa-user"></span>
+          </h2>
+          <h3 >{name}</h3>
+          <h5 className="label_">{user?.email}</h5>
+          <button className="btn btn-secondary" onClick={logout}>
+            Logout
+          </button>
+        </div>
+      </div>
+
+
 
 
     </div >

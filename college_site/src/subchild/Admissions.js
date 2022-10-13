@@ -18,7 +18,7 @@ const Admissions = () =>{
          
          </p>
                  
-         <div >
+         {/* <div >
            <h3>Documents Required</h3>
            <ul >
              <li>
@@ -41,7 +41,7 @@ const Admissions = () =>{
                </a>
              </li>
              </ul>
-         </div>
+         </div> */}
                  <div >
                    <h3>Intake Capacity</h3>
                    <ul class="tg-downloadlist">

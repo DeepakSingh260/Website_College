@@ -185,3 +185,14 @@
     margin-top: 2rem;
     max-height:50rem;
   }
+
+  select.list_box{
+    margin: 1rem;
+    margin-left: 0;
+    
+  }
+
+  select.list_box:focus .list_box_option:hover{
+    background: brown;
+    
+  }

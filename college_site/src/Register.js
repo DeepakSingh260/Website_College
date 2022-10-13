@@ -30,21 +30,21 @@ function Register() {
       <div className="login-container">
         <input
           type="text"
-          className="register__textBox"
+          className="input_"
           value={name}
           onChange={(e) => setName(e.target.value)}
           placeholder="Full Name"
         />
         <input
           type="text"
-          className="register__textBox"
+          className="input_"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="E-mail"
         />
         <input
           type="password"
-          className="register__textBox"
+          className="input_"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           placeholder="Password"
@@ -60,7 +60,7 @@ function Register() {
         </button>
 
         <div className="mt-4">
-          Already have an account? <br></br><Link to="/">Login</Link> now.
+          Already have an account? <br></br><Link to="/login">Login</Link> now.
         </div>
       </div>
     </div>

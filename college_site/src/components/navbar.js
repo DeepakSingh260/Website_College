@@ -84,6 +84,8 @@ const Navbar = () => {
 
 											</ul>
 										</li>
+
+
 										<li class="nav-item dropdown">
 											<a class='nav-link dropdown-toggle' data-toggle='dropdown' aria-expanded="false" id="navbarDropdownMenuLinkDepts" href="javascript:void(0);">Academics</a>
 											<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkDepts">

@@ -23,14 +23,14 @@ function Login() {
       <div className="login-container">
         <input
           type="text"
-          className="login__textBox"
+          className="input_"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="E-mail"
         />
         <input
           type="password"
-          className="login__textBox"
+          className="input_"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           placeholder="Password"

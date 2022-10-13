@@ -6,6 +6,7 @@ import Academics from './subchild/Academics';
 import Home from './subchild/Home';
 import React from 'react'
 import MyNavBar from './components/navbar';
+import Princi_msg from './subchild/principal_msg';
 
 
 import "./Assets/css/bootstrap.min.css";
@@ -62,6 +63,7 @@ import Tp_invitation from './subchild/tp_invitation';
 import Tp_recruiters from './subchild/tp_recruiters';
 import Tp_notice from './subchild/tp_notice';
 import Contri from './subchild/contributer'
+import Syllabus from './subchild/syllabus';
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -134,7 +136,9 @@ function App() {
                 <Route exact path="/dashboard" element={<Dashboard />} />
                 <Route exact path="/student_council" element={<Council />} />
                 <Route exact path="/log_in" element={<Login />} />
+                <Route exact path="/principal_msg" element={<Princi_msg/>} />
                 <Route exact path="/Contributors" element={<Contri/>} />
+                <Route exact path="/syllabus" element = {<Syllabus/>}/>
               </Routes>
 
               <Footer />

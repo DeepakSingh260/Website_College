@@ -81,6 +81,10 @@ const Navbar = () => {
 												<li><a class='dropdown-item' href="/electricl_department">Electrical Department</a></li>
 												<li><a class='dropdown-item' href="/e_c_department">E&C Department</a></li>
 												<li><a class='dropdown-item' href="/mechanical_department">Mechanical Department</a></li>
+												<li><a class='dropdown-item' href="/humanities">Humanities</a></li>
+												<li><a class='dropdown-item' href="/applied_math">Applied Physics</a></li>
+												<li><a class='dropdown-item' href="/applied_chem">Applied Chemistry</a></li>
+												<li><a class='dropdown-item' href="/applied_math">Applied Mathematics</a></li>
 
 											</ul>
 										</li>

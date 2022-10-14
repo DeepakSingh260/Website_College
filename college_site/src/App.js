@@ -39,6 +39,10 @@ import Civil_dep from './subchild/civil_dep';
 import Comp_dep from './subchild/comp_dep';
 import Elec_dep from './subchild/electrical_dep';
 import E_C_dep from './subchild/electronics_dep';
+import Math from './subchild/applied_math';
+import Physics from './subchild/applied_phy';
+import Chem from './subchild/applied_chem';
+import Human from './subchild/human_dep';
 import Mech_dep from './subchild/mechanical_dep';
 import Startup_cell from './subchild/startup';
 import NSS from './subchild/nss';
@@ -115,7 +119,10 @@ function App() {
                 <Route path='/electricl_department' element = {<Elec_dep/>} />
                 <Route path='/e_c_department' element = {<E_C_dep/>} />
                 <Route path='/mechanical_department' element = {<Mech_dep/>} />
-                
+                <Route path='/applied_math' element = {<Math/>} />
+                <Route path='/applied_chem' element = {<Chem/>} />
+                <Route path='/applied_phy' element = {<Physics/>} />
+                <Route path='/humanities' element = {<Human/>} />
                 <Route path='/tp_contact' element = {<Tp_contact/>} />
                 <Route path='/tp_intro' element = {<Tp_intro/>} />
                 <Route path='/tp_invitation' element = {<Tp_invitation/>} />

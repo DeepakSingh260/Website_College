@@ -98,6 +98,7 @@ const Navbar = () => {
 											<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkAdm">
 												<li><a class='dropdown-item' href="/admissions">Admissions</a></li>
 												<li><a class='dropdown-item' href="/Admissions_detail">Admission Detail</a></li>
+												<l1><a class='dropdown-item' href="https://firebasestorage.googleapis.com/v0/b/college-website-52b15.appspot.com/o/Downloads%2Fstatues%20(1).doc?alt=media&token=fcf06b56-b1c8-46b4-a4e8-430ea4675a35">University Statute</a></l1>
 											</ul>
 
 										</li>

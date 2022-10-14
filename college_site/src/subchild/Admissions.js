@@ -18,18 +18,14 @@ const Admissions = () =>{
          
          </p>
                  
-         {/* <div >
+         <div >
            <h3>Documents Required</h3>
            <ul >
              <li>
              <a href="https://firebasestorage.googleapis.com/v0/b/college-website-52b15.appspot.com/o/Downloads%2Fdoc_require_admission.pdf?alt=media&token=8116827c-a0fe-474c-8fc7-48ba8f7e24c3">
                  Documents Required for Admission
                </a></li> 
-             <li>
-               <a href="#">
-               Circular for EWS
-               </a>
-             </li>
+           
              <li>
                <a href="https://firebasestorage.googleapis.com/v0/b/college-website-52b15.appspot.com/o/Downloads%2Fundertaking.pdf?alt=media&token=bceef685-6b30-4c65-b97b-fd8229aab65e">
                Undertaking from All Students
@@ -41,7 +37,8 @@ const Admissions = () =>{
                </a>
              </li>
              </ul>
-         </div> */}
+         </div>
+         <br/>
                  <div >
                    <h3>Intake Capacity</h3>
                    <ul class="tg-downloadlist">

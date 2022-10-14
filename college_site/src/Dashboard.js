@@ -187,10 +187,7 @@ function Dashboard() {
     e.preventDefault()
     const storageRef = refer(storage, 'syllabus_folder/' + selectedBranch + '/' + selectedBranch + "_" + selectedYear + ".pdf");
     uploadBytes(storageRef, selectedFile).then((snapshot) => {
-      getDownloadURL(storageRef).then((val) => {
-        console.log("link gotten")
-        console.log(val)
-      })
+      alert("file uploaded successfully")
       console.log('Uploaded the syllabus pdf file!');
     });
 

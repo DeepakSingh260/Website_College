@@ -5,6 +5,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { getDatabase, onValue, ref, set } from "firebase/database";
 import app from "../firebase.js"
 import { async } from '@firebase/util';
+import './civil_dep.css';
+
 
 import gcet_1 from '../Assets/Garden.jpg';
 import gcet_2 from '../Assets/Lab1.jpg';
@@ -31,8 +33,8 @@ const Physics =()=>{
       })
     },[]);
     return(
-        <div>
-            <div>
+        <div className="container">
+            <div >
         <div className='col-lg-6 text-center' >
           <Imageslider href={[gcet_1, gcet_2, gcet_3, gcet_4, CLUB_LOGO]} />
         </div>

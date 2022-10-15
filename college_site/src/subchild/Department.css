@@ -19,7 +19,30 @@ thead{
     color: aliceblue;
 }
 
+
 .table caption{
     caption-side: top;
     
 }
+
+
+
+.table .branch_name{
+    padding: 1rem!important;
+}
+
+
+.table .syllabus_link a{
+    color: white;
+    /* font-weight: 700; */
+    font-size: 1.7rem;
+    /* background-color: brown; */
+    padding: 1rem;
+    display: block;
+}
+.table .syllabus_link {
+    color: white;
+    background-color: brown;
+  
+}
+

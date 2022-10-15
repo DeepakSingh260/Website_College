@@ -31,8 +31,8 @@ const Chem =()=>{
       })
     },[]);
     return(
-        <div>
-            <div>
+      <div className="container">
+      <div>
         <div className='col-lg-6 text-center' >
           <Imageslider href={[gcet_1, gcet_2, gcet_3, gcet_4, CLUB_LOGO]} />
         </div>

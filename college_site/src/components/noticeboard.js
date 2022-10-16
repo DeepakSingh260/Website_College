@@ -90,14 +90,14 @@ const Noticeboard = () => {
 	}, []);
 
 	return (
-		<div class="card-home" >
-			<div class="card-title tg-widgettitle">
-				<h3 class='text-center'>Notice Board</h3>
+		<div class="card-home create-notification-container mt-3" >
+			<div class="">
+				<h3 class='text-center heading' style={{color:'brown'}}>Notice Board</h3>
 			</div>
-				<div class="input-group mb-3">
-					<input type="text" class="form-control" placeholder="Search Notification" aria-label="Search_Notification" aria-describedby="basic-addon1" onKeyDown={HandleKeyPress} />
+				<div class="mb-4">
+					<input type="text" class="input_ form-control" placeholder="Search Notification" aria-label="Search_Notification" aria-describedby="basic-addon1" onKeyDown={HandleKeyPress} />
 				</div>
-			<div class=" card-body tg-widgetcontent">
+			<div class="card-body">
 				<ul class='list-group list-group-flush'>
 					{tasks.map(
 						(task) => (

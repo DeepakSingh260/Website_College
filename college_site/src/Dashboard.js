@@ -289,7 +289,7 @@ function Dashboard() {
 
               {/* <input className="input_" type="text" placeholder="Name" onChange={handleName} name="Update" /> */}
               {/* <textarea className="textarea_" cols='40' rows='50' type="text" placeholder="Enter Contribution" onChange={handleContribution} name="Update" /> */}
-              <select class='list_box' onChange={handleBranchChange} name="branch-names" id="branch-names">
+              <select className="input_" class='list_box' onChange={handleBranchChange} name="branch-names" id="branch-names">
                 <option className="list_box_option" value="COMPUTER">Computer Engineering</option>
                 <option className="list_box_option" value="Mechanical">Mechanical Engineering</option>
                 <option className="list_box_option" value="Civil">Civil Engineering</option>
@@ -299,7 +299,7 @@ function Dashboard() {
                 <option className="list_box_option" value="MTECH_E_C">M.Tech E&C</option>
                 <option className="list_box_option" value="MTECH_Mechanical">M.Tech Mechanical</option>
               </select>
-              <select class='list_box' disabled={isenabled_} onChange={handleYearChange} name="semester-names" id="semester-names">
+              <select className="input_" class='list_box' disabled={isenabled_} onChange={handleYearChange} name="semester-names" id="semester-names">
                 <option className="list_box_option" value="1">1st year</option>
                 <option className="list_box_option" value="2">2nd Year</option>
                 <option className="list_box_option" value="3">3rd Year</option>

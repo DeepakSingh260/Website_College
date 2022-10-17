@@ -95,6 +95,7 @@ const Navbar = () => {
 											<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkDepts">
 												<li><a className='dropdown-item' href="https://www.coeju.com/">Results</a></li>
 												<li><a className='dropdown-item' href="/Syllabus">Syllabus</a></li>
+												<li><a className='dropdown-item' href="/annual_report">Annual Report</a></li>
 											</ul>
 										</li>
 										<li class="nav-item dropdown">

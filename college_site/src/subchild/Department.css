@@ -31,6 +31,12 @@ thead{
     padding: 1rem!important;
 }
 
+.table td{
+    vertical-align: middle;
+    padding-top: 1.5rem!important;
+    padding-bottom: 1.5rem!important;
+}
+
 
 .table .syllabus_link a{
     color: white;

@@ -93,7 +93,15 @@ function Dashboard() {
   const [selectedYear, setSelectedYear] = useState('1');
   const [selectedFile, setSelectedFile] = useState('');
 
+  const [isenabled_, enableList] = useState('');
+
   const handleBranchChange = event => {
+    if(['MTECH_Computer', 'MTECH_E_C', 'MTECH_Mechanical'].includes(event.target.value)){
+      enableList('true');
+    }
+    else{
+      enableList('');
+    }
     console.log('Label 👉️', event.target.selectedOptions[0].label);
     console.log(event.target.value);
     setSelectedBranch(event.target.value);
@@ -287,8 +295,11 @@ function Dashboard() {
                 <option className="list_box_option" value="Civil">Civil Engineering</option>
                 <option className="list_box_option" value="Electrical">Electrical Engineering</option>
                 <option className="list_box_option" value="E_C">Electronics and Communication Engineering</option>
+                <option className="list_box_option" value="MTECH_Computer">M.Tech Computer</option>
+                <option className="list_box_option" value="MTECH_E_C">M.Tech E&C</option>
+                <option className="list_box_option" value="MTECH_Mechanical">M.Tech Mechanical</option>
               </select>
-              <select class='list_box' onChange={handleYearChange} name="semester-names" id="semester-names">
+              <select class='list_box' disabled={isenabled_} onChange={handleYearChange} name="semester-names" id="semester-names">
                 <option className="list_box_option" value="1">1st year</option>
                 <option className="list_box_option" value="2">2nd Year</option>
                 <option className="list_box_option" value="3">3rd Year</option>

@@ -1,4 +1,4 @@
-import React, { Component ,Fragment,useEffect,useState } from 'react';
+import React, { Component, Fragment, useEffect, useState } from 'react';
 import Department_Image from '../Assets/civil_dep.jpg';
 import CLUB_LOGO from '../Assets/gcet_6.jpg';
 import './Home.css';
@@ -38,49 +38,69 @@ import p_m from '../Assets/p_m_pic.jpg'
 import t_p from '../Assets/card_imgs/t&p.jpg'
 import road from '../Assets/card_imgs/road.jpg'
 
-import {ref as refer, getStorage, getDownloadURL} from "firebase/storage"
+import { ref as refer, getStorage, getDownloadURL } from "firebase/storage"
 import app from '../firebase';
 import Tp_intro from './tp_intro';
 
 
 const Home = () => {
   const storage = getStorage(app)
-  const reference = refer(storage,"clubs.jpg")
+  const reference = refer(storage, "clubs.jpg")
   console.log(getDownloadURL(reference))
-  
-  const [heading , setTodo] =  useState("/");
-  useEffect (()=>{
-    getDownloadURL(reference).then((value)=>{
+
+  const [heading, setTodo] = useState("/");
+  useEffect(() => {
+    getDownloadURL(reference).then((value) => {
       setTodo(value)
     })
-  },[]);
+  }, []);
 
   return (
-    <Fragment>
-    <div className='container'>
-      <div className='Home'>
+    <Fragment >
+      <div className='container'>
+        <div className='Home'>
           <TextAnim />
-        <div className='row justify-content-center align-items-start'>
-          <div className='col-lg-8 col-sm-12' >
-            <Imageslider href={[gcet_1, gcet_2, gcet_3, gcet_4]} />
-          </div>
-          <div className='col-lg-4 col-sm-12 notification'>
-            <Noticeboard />
+          <div className='row justify-content-center align-items-start'>
+            <div className='col-lg-8 col-sm-12' >
+              <Imageslider href={[gcet_1, gcet_2, gcet_3, gcet_4]} />
+            </div>
+
+            <div className='col-lg-4 col-sm-12 notification'>
+              <Noticeboard />
+            </div>
           </div>
 
         </div>
-
       </div>
-    </div>
-      <div className='container'>
+
+      <div className='container mb-5'>
+        <div className="heading text-center">
+
+          <h1>Vision</h1>
+        </div>
+        <div className="text_body text-center">
+          <p className=''>
+            To emerge as a pioneer centre of research & technology imparting a greater contribution in “Nation-building” by including the intellectual potential, moral character and professional ethics among the aspiring young engineers so as to fulfil the vision of India as a “Developed Nation”
+          </p>
+          <p className=''>
+            <b>
+              Our Misson<br></br>
+              * To provide an atmosphere that facilitates personal commitment to the educational success of students in an environment that values diversity and community<br></br><br></br>
+              * To produce quality manpower equipped with excellent technical skills, human & social values, leadership, creativity and innovation for the sustainable growth and benefits of mankind.<br></br><br></br>
+              * To inculcate entrepreneurial attitude and values amongst learners.<br></br>
+            </b>
+          </p>
+        </div>
+      </div>
+      <div className='container '>
         <div className='row justify-content-center cards'>
 
-          <Card id='card_img_no_link' name='NSS' href={nss} link="nss"external='False'/>
-          <Card id='card_img_no_link' name='Startup Cell' href={startup} link="startup_cell"external='False'/>
-          <Card id='card_img_link' name='Training & Placement ' href={t_p} link={Tp_intro} external='True'/>
-          <Card id='card_img_no_link' name="IEEE Digital" href={ieee} link="https://ieeexplore.ieee.org/Xplore/home.jsp" external='True'/>
-          <Card id='card_img_no_link' name='Scholarship Portal' href={nsp} link="https://scholarships.gov.in/" external='True'/>
-          <Card id='card_img_no_link' name='Principal Message' href={p_m} link="/principal_msg" external='False'/>
+          <Card id='card_img_no_link' name='NSS' href={nss} link="nss" external='False' />
+          <Card id='card_img_no_link' name='Startup Cell' href={startup} link="startup_cell" external='False' />
+          <Card id='card_img_link' name='Training & Placement ' href={t_p} link={Tp_intro} external='True' />
+          <Card id='card_img_no_link' name="IEEE Digital" href={ieee} link="https://ieeexplore.ieee.org/Xplore/home.jsp" external='True' />
+          <Card id='card_img_no_link' name='Scholarship Portal' href={nsp} link="https://scholarships.gov.in/" external='True' />
+          <Card id='card_img_no_link' name='Principal Message' href={p_m} link="/principal_msg" external='False' />
         </div>
       </div>
     </Fragment>

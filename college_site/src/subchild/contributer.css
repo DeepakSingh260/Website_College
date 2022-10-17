@@ -193,9 +193,11 @@
     display: flex;
     flex-direction: row;
     vertical-align: middle;
-    background-color: rgba(165, 42, 42, 0.2);
+    /* background-color: rgba(165, 42, 42, 0.101); */
+    background-color: #fcf8f8;
     border-radius: 20px;
     margin-bottom: 3rem;
+    border: 2px solid rgba(165, 42, 42, 0.345);
   }
   ul{
     padding-left: 0;

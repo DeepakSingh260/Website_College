@@ -69,6 +69,9 @@ import Tp_recruiters from './subchild/tp_recruiters';
 import Tp_notice from './subchild/tp_notice';
 import Contri from './subchild/contributer'
 import Syllabus from './subchild/syllabus';
+import Contact from './subchild/contact_us';
+import HODs from './subchild/hods';
+import Grievance from './subchild/grievance';
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -148,6 +151,9 @@ function App() {
                 <Route exact path="/principal_msg" element={<Princi_msg/>} />
                 <Route exact path="/Contributors" element={<Contri/>} />
                 <Route exact path="/syllabus" element = {<Syllabus/>}/>
+                <Route exact path="/contact_us" element = {<Contact/>}/>
+                <Route exact path="/hods_list" element = {<HODs/>}/>
+                <Route exact path="/grievance" element = {<Grievance/>}/>
               </Routes>
 
               <Footer />

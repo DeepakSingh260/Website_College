@@ -132,50 +132,94 @@ const Syllabus = () => {
 			setM_s4(value)
 		})
 	})
+	const [mtech_co_s1, setmtech_co_s1] = useState("/")
+	useEffect(() => {
+		getDownloadURL(refer(storage, "syllabus_folder/MTECH_Computer/MTECH_Computer_1.pdf")).then((value) => {
+			setmtech_co_s1(value)
+		})
+	})
+	const [mtech_ec_s1, setmtech_ec_s1] = useState("/")
+	useEffect(() => {
+		getDownloadURL(refer(storage, "syllabus_folder/MTECH_E_C/MTECH_E_C_1.pdf")).then((value) => {
+			setmtech_ec_s1(value)
+		})
+	})
+	const [mtech_m_s1, setmtech_m_s1] = useState("/")
+	useEffect(() => {
+		getDownloadURL(refer(storage, "syllabus_folder/MTECH_Mechanical/MTECH_Mechanical_1.pdf")).then((value) => {
+			setmtech_m_s1(value)
+		})
+	})
 	return (
 		<div className='container'>
 			<h1>Syllabus</h1>
 			<table className='table_dep table table-hover '>
 				<tr>
-					<th scope='col'>Branch</th>
+					<th scope='col'>Branch(B.E)</th>
 					<th scope='col'>Semesters</th>
 				</tr>
 				<tbody>
 
 					<tr>
 						<td className="branch_name">Civil</td>
-						<td className="syllabus_link"><a href={c_s1}>1-2</a></td>
-						<td className="syllabus_link"><a href={c_s2}>3-4</a></td>
-						<td className="syllabus_link"><a href={c_s3}>5-6</a></td>
-						<td className="syllabus_link"><a href={c_s4}>7-8</a></td>
+						<td className="syllabus_link"><a href={c_s1} target='_blank'>1-2</a></td>
+						<td className="syllabus_link"><a href={c_s2} target='_blank'>3-4</a></td>
+						<td className="syllabus_link"><a href={c_s3} target='_blank'>5-6</a></td>
+						<td className="syllabus_link"><a href={c_s4} target='_blank'>7-8</a></td>
 					</tr>
 					<tr>
 						<td className="branch_name">Computer</td>
-						<td className="syllabus_link"><a href={co_s1}>1-2</a></td>
-						<td className="syllabus_link"><a href={co_s2}>3-4</a></td>
-						<td className="syllabus_link"><a href={co_s3}>5-6</a></td>
-						<td className="syllabus_link"><a href={co_s4}>7-8</a></td>
+						<td className="syllabus_link"><a href={co_s1} target='_blank'>1-2</a></td>
+						<td className="syllabus_link"><a href={co_s2} target='_blank'>3-4</a></td>
+						<td className="syllabus_link"><a href={co_s3} target='_blank'>5-6</a></td>
+						<td className="syllabus_link"><a href={co_s4} target='_blank'>7-8</a></td>
 					</tr>
 					<tr>
 						<td className="branch_name">E&C</td>
-						<td className="syllabus_link"><a href={ec_s1}>1-2</a></td>
-						<td className="syllabus_link"><a href={ec_s2}>3-4</a></td>
-						<td className="syllabus_link"><a href={ec_s3}>5-6</a></td>
-						<td className="syllabus_link"><a href={ec_s4}>7-8</a></td>
+						<td className="syllabus_link"><a href={ec_s1} target='_blank'>1-2</a></td>
+						<td className="syllabus_link"><a href={ec_s2} target='_blank'>3-4</a></td>
+						<td className="syllabus_link"><a href={ec_s3} target='_blank'>5-6</a></td>
+						<td className="syllabus_link"><a href={ec_s4} target='_blank'>7-8</a></td>
 					</tr>
 					<tr>
 						<td className="branch_name">Electrical</td>
-						<td className="syllabus_link"><a href={e_s1}>1-2</a></td>
-						<td className="syllabus_link"><a href={e_s2}>3-4</a></td>
-						<td className="syllabus_link"><a href={e_s3}>5-6</a></td>
-						<td className="syllabus_link"><a href={e_s4}>7-8</a></td>
+						<td className="syllabus_link"><a href={e_s1} target='_blank'>1-2</a></td>
+						<td className="syllabus_link"><a href={e_s2} target='_blank'>3-4</a></td>
+						<td className="syllabus_link"><a href={e_s3} target='_blank'>5-6</a></td>
+						<td className="syllabus_link"><a href={e_s4} target='_blank'>7-8</a></td>
 					</tr>
 					<tr>
 						<td className="branch_name">Mechanical</td>
-						<td className="syllabus_link"><a href={m_s1}>1-2</a></td>
-						<td className="syllabus_link"><a href={m_s2}>3-4</a></td>
-						<td className="syllabus_link"><a href={m_s3}>5-6</a></td>
-						<td className="syllabus_link"><a href={m_s4}>7-8</a></td>
+						<td className="syllabus_link"><a href={m_s1} target='_blank'>1-2</a></td>
+						<td className="syllabus_link"><a href={m_s2} target='_blank'>3-4</a></td>
+						<td className="syllabus_link"><a href={m_s3} target='_blank'>5-6</a></td>
+						<td className="syllabus_link"><a href={m_s4} target='_blank'>7-8</a></td>
+					</tr>
+					
+				</tbody>
+			</table>
+			<table className='table_dep table table-hover '>
+				<tr>
+					<th scope='col'>Branch(M.Tech)</th>
+					<th scope='col'>Semesters</th>
+				</tr>
+				<tbody>
+					<tr>
+						<td className="branch_name">Computer</td>
+						<td className="syllabus_link"><a href={mtech_co_s1} target='_blank'>Download</a></td>
+						
+					</tr>
+					<tr>
+						<td className="branch_name">E&C</td>
+						<td className="syllabus_link"><a href={mtech_ec_s1} target='_blank'>Download</a></td>
+						
+					</tr>
+					
+					
+					<tr>
+						<td className="branch_name">Mechanical</td>
+						<td className="syllabus_link"><a href={mtech_m_s1} target='_blank'>Download</a></td>
+						
 					</tr>
 				</tbody>
 			</table>

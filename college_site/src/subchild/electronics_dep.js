@@ -52,8 +52,10 @@ const E_C_dep = () =>{
         </div>
         <div className="text_body text-center">
 
-          <p className=''>{desc}</p>
-        </div>
+        <p className=''><b>
+            {desc}
+            </b>
+            </p>        </div>
       </div>
     </div>
 		

@@ -35,12 +35,12 @@ const Navbar = () => {
 		})
 	})
 
-	const [tp_list ,set_list] = useState("/")
+	const [tp_list, set_list] = useState("/")
 
-	const tp_ref = refer(storage , "placement_list.pdf")
+	const tp_ref = refer(storage, "placement_list.pdf")
 
-	useEffect(()=>{
-		getDownloadURL(tp_ref).then((value)=>{
+	useEffect(() => {
+		getDownloadURL(tp_ref).then((value) => {
 			set_list(value)
 		})
 	})
@@ -114,11 +114,11 @@ const Navbar = () => {
 											</ul>
 										</li>
 										<li class="nav-item dropdown">
-											<a class='nav-link dropdown-toggle' data-toggle='dropdown' aria-expanded="false" id="navbarDropdownMenuLinkClb" href="javascript:void(0);">Download</a>
+											<a class='nav-link dropdown-toggle' data-toggle='dropdown' aria-expanded="false" id="navbarDropdownMenuLinkClb" href="javascript:void(0);">Forms</a>
 											<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkClb">
 												<li><a class='dropdown-item' href={admin}>Admission Form</a></li>
-												<li><a class='dropdown-item' href={emp}>EMPLOYEE NOC Form</a></li>
-												<li><a class='dropdown-item' href={noc}>STUDENT NOC FORM</a></li>
+												<li><a class='dropdown-item' href={emp}>Employee NOC Form</a></li>
+												<li><a class='dropdown-item' href={noc}>Student NOC FORM</a></li>
 											</ul>
 										</li>
 										<li class="nav-item dropdown">
@@ -131,22 +131,44 @@ const Navbar = () => {
 												<li><a class='dropdown-item' href={tp_list}>Placement List</a></li>
 												<li><a class='dropdown-item' href="/tp_notice">Notice Board</a></li>
 												<li><a class='dropdown-item' href="/tp_contact">Contact</a></li>
-											
+
 											</ul>
 										</li>
-										<li className='nav-item'><a className='nav-link' href="/administration">Administration</a></li>
+										{/* <li className='nav-item'><a className='nav-link' href="/administration">Administrative Staff</a></li> */}
 										<li class="nav-item dropdown">
 											<a class='nav-link dropdown-toggle' data-toggle='dropdown' aria-expanded="false" id="navbarDropdownMenuLinkClb" href="javascript:void(0);">About Us</a>
 											<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkClb">
 												<li><a class='dropdown-item' href="/about_us">About College</a></li>
+												<li><a className='dropdown-item' href="/hods_list">HOD's List</a></li>
+												<li><a className='dropdown-item' href="/administration">Administrative Staff</a></li>
+
 												<li><a class='dropdown-item' href="/Contributors">Contributors</a></li>
-												
+
 											</ul>
 										</li>
-										
-										<li className='nav-item'>
-											<a className='nav-link' href="/log_in">Log In</a>
+										<li class="nav-item dropdown">
+											<a class='nav-link dropdown-toggle' data-toggle='dropdown' aria-expanded="false" id="navbarDropdownMenuLinkClb" href="javascript:void(0);">Contact</a>
+											<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkClb">
+												<li><a class='dropdown-item' href="/contact_us">Contact Us</a></li>
+												<li><a className='dropdown-item' href="/grievance">Grievance</a></li>
+												<li><a className='dropdown-item' href="https://gcetjammu.edugrievance.com/" target="_blank">Grievance Redressal Portal</a></li>
+									
 
+											</ul>
+										</li>
+
+										<li class="nav-item dropdown">
+											<a class='nav-link dropdown-toggle' data-toggle='dropdown' aria-expanded="false" id="navbarDropdownMenuLinkClb" href="javascript:void(0);"> Quick Links</a>
+											<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkClb">
+												<li><a class='dropdown-item' href="http://www.jammuuniversity.in/">Jammu University</a></li>
+												<li><a class='dropdown-item' href="http://www.jkpsc.org/">JKPSC</a></li>
+												<li><a class='dropdown-item' href="http://www.jakbpee.nic.in/">J&K BOPEE</a></li>
+												<li><a class='dropdown-item' href="http://www.jammukashmir.nic.in/">J&K Government</a></li>
+												<li><a class='dropdown-item' href="http://www.aicte.ernet.in/">AICTE</a></li>
+											</ul>
+										</li>
+										<li className='nav-item'>
+											<a className='nav-link' href="/log_in">Admin</a>
 										</li>
 
 

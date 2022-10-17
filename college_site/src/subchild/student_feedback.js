@@ -1,11 +1,15 @@
-import React , {useEffect , useState} from "react";
+import { onValue ,ref , getDatabase } from "firebase/database";
 
+import React , {useEffect , useState} from "react";
+import app from "../firebase";
+
+const db = getDatabase(app)
 
 
 const Feedback = ()=>{
-    const [selectedBranch, setSelectedBranch] = useState('COMPUTER');
+    const [selectedBranch, setSelectedBranch] = useState('Computer');
     const [selectedYear, setSelectedYear] = useState('1');
-    const [selectedFile, setSelectedFile] = useState('');
+    const [selectedLink, setSelectedLink] = useState('');
 
     const [isenabled_, enableList] = useState('');
     
@@ -26,6 +30,15 @@ const Feedback = ()=>{
         setSelectedYear(event.target.value);
     };
     const getLink =(e)=>{
+        e.preventDefault()
+        console.log(selectedBranch , selectedYear)
+        const read = ref(db , "Feedback/"+selectedBranch.toString()+"/"+selectedYear.toString()+"/")
+        console.log(read)
+        onValue(read , (snapshot)=>{
+             let link = snapshot.val().Link
+             console.log(link)
+             setSelectedLink(link)
+        })
 
     }
     return(
@@ -38,7 +51,7 @@ const Feedback = ()=>{
               {/* <input className="input_" type="text" placeholder="Name" onChange={handleName} name="Update" /> */}
               {/* <textarea className="textarea_" cols='40' rows='50' type="text" placeholder="Enter Contribution" onChange={handleContribution} name="Update" /> */}
               <select className="input_" class='list_box' onChange={handleBranchChange} name="branch-names" id="branch-names">
-                <option className="list_box_option" value="COMPUTER">Computer Engineering</option>
+                <option className="list_box_option" value="Computer">Computer Engineering</option>
                 <option className="list_box_option" value="Mechanical">Mechanical Engineering</option>
                 <option className="list_box_option" value="Civil">Civil Engineering</option>
                 <option className="list_box_option" value="Electrical">Electrical Engineering</option>
@@ -60,6 +73,10 @@ const Feedback = ()=>{
               </button>
               </div>
           </div>
+
+          <div>
+            <a href={selectedLink}>{selectedLink}</a>
+            </div>
 
           {/* <div className="row">
             <div className="col-lg-12 ">

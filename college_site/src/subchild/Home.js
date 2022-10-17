@@ -84,7 +84,7 @@ const Home = () => {
           </p>
           <p className=''>
             <b>
-              Our Misson<br></br>
+              Our Mission<br></br>
               * To provide an atmosphere that facilitates personal commitment to the educational success of students in an environment that values diversity and community<br></br><br></br>
               * To produce quality manpower equipped with excellent technical skills, human & social values, leadership, creativity and innovation for the sustainable growth and benefits of mankind.<br></br><br></br>
               * To inculcate entrepreneurial attitude and values amongst learners.<br></br>

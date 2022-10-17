@@ -139,15 +139,23 @@ const Navbar = () => {
 											<a class='nav-link dropdown-toggle' data-toggle='dropdown' aria-expanded="false" id="navbarDropdownMenuLinkClb" href="javascript:void(0);">About Us</a>
 											<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkClb">
 												<li><a class='dropdown-item' href="/about_us">About College</a></li>
+												<li><a className='dropdown-item' href="/hods_list">HOD's List</a></li>
 												<li><a className='dropdown-item' href="/administration">Administrative Staff</a></li>
 
 												<li><a class='dropdown-item' href="/Contributors">Contributors</a></li>
 
 											</ul>
 										</li>
-										<li className='nav-item'>
-											<a className='nav-link' href="/contact_us">Contact</a>
+										<li class="nav-item dropdown">
+											<a class='nav-link dropdown-toggle' data-toggle='dropdown' aria-expanded="false" id="navbarDropdownMenuLinkClb" href="javascript:void(0);">Contact</a>
+											<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkClb">
+												<li><a class='dropdown-item' href="/contact_us">Contact Us</a></li>
+												<li><a className='dropdown-item' href="/grievance">Grievance</a></li>
+									
+
+											</ul>
 										</li>
+
 										<li class="nav-item dropdown">
 											<a class='nav-link dropdown-toggle' data-toggle='dropdown' aria-expanded="false" id="navbarDropdownMenuLinkClb" href="javascript:void(0);"> Quick Links</a>
 											<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkClb">

@@ -30,7 +30,7 @@ const Annual_report=()=>{
         
 	},[])
     return(
-        <div>
+        <div class="container">
            <div class=" card-body tg-widgetcontent">
 				<ul class='list-group list-group-flush'>
 					{annual_list.map(

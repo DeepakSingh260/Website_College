@@ -23,11 +23,13 @@ import "./Assets/css/main.css";
 import "./Assets/css/color.css";
 import "./Assets/css/responsive.css";
 
+
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import Admissions from './subchild/Admissions';
 import Admission_detail from './subchild/admissiondetails';
+import Feedback from './subchild/student_feedback';
 
 import Footer from './components/Footer';
 
@@ -154,7 +156,7 @@ function App() {
                 <Route exact path="/principal_msg" element={<Princi_msg/>} />
                 <Route exact path="/Contributors" element={<Contri/>} />
                 <Route exact path="/syllabus" element = {<Syllabus/>}/>
-
+                <Route exact path="/feedback" element = {<Feedback/>}/>
                 <Route exact path="/annual_report" element = {<Annual_report/>}/>
 
                 <Route exact path="/contact_us" element = {<Contact/>}/>

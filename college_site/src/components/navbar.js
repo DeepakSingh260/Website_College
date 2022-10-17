@@ -96,6 +96,7 @@ const Navbar = () => {
 												<li><a className='dropdown-item' href="https://www.coeju.com/">Results</a></li>
 												<li><a className='dropdown-item' href="/Syllabus">Syllabus</a></li>
 												<li><a className='dropdown-item' href="/annual_report">Annual Report</a></li>
+												<li><a className='dropdown-item' href="/feedback">Student Feedback</a></li>
 											</ul>
 										</li>
 										<li class="nav-item dropdown">

@@ -151,6 +151,7 @@ const Navbar = () => {
 											<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkClb">
 												<li><a class='dropdown-item' href="/contact_us">Contact Us</a></li>
 												<li><a className='dropdown-item' href="/grievance">Grievance</a></li>
+												<li><a className='dropdown-item' href="https://gcetjammu.edugrievance.com/" target="_blank">Grievance Redressal Portal</a></li>
 									
 
 											</ul>

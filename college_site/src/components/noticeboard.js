@@ -27,7 +27,8 @@ const Noticeboard = () => {
 		let query = String(e.target.value)
 		query = query.toUpperCase()
 		
-		if (e.key == 'Enter') {
+		
+		if (e.key == 'Enter' || query=='') {
 
 		const fetchedTasks = [];
 		let date  = new Date()
@@ -95,7 +96,7 @@ const Noticeboard = () => {
 				<h3 class='text-center heading' style={{color:'brown'}}>Notice Board</h3>
 			</div>
 				<div class="mb-4">
-					<input type="text" class="input_ form-control" placeholder="Search Notification" aria-label="Search_Notification" aria-describedby="basic-addon1" onKeyDown={HandleKeyPress} />
+					<input type="text" class="input_ form-control" placeholder="Search Notification" onKeyDown={HandleKeyPress} />
 				</div>
 			<div class="card-body">
 				<ul class='list-group list-group-flush'>

@@ -105,24 +105,39 @@ const Navbar = () => {
 												<li><a class='dropdown-item' href="/admissions">Admissions</a></li>
 												<li><a class='dropdown-item' href="/Admissions_detail">Admission Detail</a></li>
 												<l1><a class='dropdown-item' href="https://firebasestorage.googleapis.com/v0/b/college-website-52b15.appspot.com/o/Downloads%2Fstatues%20(1).doc?alt=media&token=fcf06b56-b1c8-46b4-a4e8-430ea4675a35">University Statute</a></l1>
-											</ul>
-
-										</li>
-										<li class="nav-item dropdown">
-											<a class='nav-link dropdown-toggle' data-toggle='dropdown' aria-expanded="false" id="navbarDropdownMenuLinkClb" href="javascript:void(0);">Clubs & Council</a>
-											<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkClb">
-												<li><a class='dropdown-item' href="/student_council">Student Council</a></li>
-
-											</ul>
-										</li>
-										<li class="nav-item dropdown">
-											<a class='nav-link dropdown-toggle' data-toggle='dropdown' aria-expanded="false" id="navbarDropdownMenuLinkClb" href="javascript:void(0);">Forms</a>
-											<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkClb">
 												<li><a class='dropdown-item' href={admin}>Admission Form</a></li>
 												<li><a class='dropdown-item' href={emp}>Employee NOC Form</a></li>
 												<li><a class='dropdown-item' href={noc}>Student NOC FORM</a></li>
 											</ul>
+
 										</li>
+
+										<li class="nav-item dropdown">
+											<a class='nav-link dropdown-toggle' data-toggle='dropdown' aria-expanded="false" id="navbarDropdownMenuLinkAdm" href="javascript:void(0);">Tender</a>
+											<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkAdm">
+												<li><a class='dropdown-item' href="#"> TENDER'S PUBLISHED UNDER TEQIP-III GRANT/FUNDS</a></li>
+												<li><a class='dropdown-item' href="#">TENDER'S PUBLISHED UNDER COLLEGE GRANT/FUNDS</a></li>
+			
+											</ul>
+
+										</li>
+										<li class="nav-item dropdown">
+											<a class='nav-link dropdown-toggle' data-toggle='dropdown' aria-expanded="false" id="navbarDropdownMenuLinkAdm" href="javascript:void(0);">AICTE EOA</a>
+											<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkAdm">
+												<li><a class='dropdown-item' href="#">2022-2023</a></li>
+												<li><a class='dropdown-item' href="#">2021-2022</a></li>
+												<l1><a class='dropdown-item' href="#">2020-2021</a></l1>
+												<li><a class='dropdown-item' href="#">2018-2019</a></li>
+												<li><a class='dropdown-item' href="#">2017-2018</a></li>
+												<l1><a class='dropdown-item' href="#">2016-2017</a></l1>
+												<li><a class='dropdown-item' href="#">2013-2016</a></li>
+												<li><a class='dropdown-item' href="#">2008-2013</a></li>
+												<l1><a class='dropdown-item' href="#">Before 2008</a></l1>
+											</ul>
+
+										</li>
+						
+										
 										<li class="nav-item dropdown">
 											<a class='nav-link dropdown-toggle' data-toggle='dropdown' aria-expanded="false" id="navbarDropdownMenuLinkClb" href="javascript:void(0);">T&P</a>
 											<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkClb">

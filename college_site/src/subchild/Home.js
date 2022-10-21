@@ -17,6 +17,9 @@ import gcet_1 from '../Assets/Garden.jpg';
 import gcet_2 from '../Assets/Lab1.jpg';
 import gcet_3 from '../Assets/gcet_3.jpg';
 import gcet_4 from '../Assets/Mechanical1.jpg';
+import s_c from '../Assets/card_imgs/t&p.jpg'
+
+import mou from '../Assets/card_imgs/card4.jpg'
 
 import annual_report_img from '../Assets/card_imgs/card1.jpg'
 import annual_report2_img from '../Assets/card_imgs/card2.jpg'
@@ -101,6 +104,8 @@ const Home = () => {
           <Card id='card_img_no_link' name="IEEE Digital" href={ieee} link="https://ieeexplore.ieee.org/Xplore/home.jsp" external='True' />
           <Card id='card_img_no_link' name='Scholarship Portal' href={nsp} link="https://scholarships.gov.in/" external='True' />
           <Card id='card_img_no_link' name='Principal Message' href={p_m} link="/principal_msg" external='False' />
+          <Card id='card_img_no_link' name='MEMORANDUM of UNDERSTANDINGs' href={mou} link="#" external='False' />
+          <Card id='card_img_no_link' name='Student Council' href={s_c} link="/student_council" external='False' />
         </div>
       </div>
     </Fragment>
